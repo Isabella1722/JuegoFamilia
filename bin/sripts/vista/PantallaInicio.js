@@ -1,0 +1,12 @@
+class PantallaInicio{
+    constructor(){
+
+    
+    }
+
+    
+
+
+
+
+}
