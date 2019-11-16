@@ -1,0 +1,47 @@
+body {
+
+    background-image:url("/data/img/fondo.jpg");
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+ 
+}
+
+#botonIngresar{
+    background:green;
+    border-style: none;
+    color: white;
+    border-radius: 35px;
+    width: 200px;
+    height: 60px;
+    justify-content: center;
+    margin-left: 22%;
+    margin-top: 450px;
+}
+main{
+    width: 100%;
+    height: 100%;
+
+}
+#botonIngresar:hover{
+    background:rgb(196, 218, 3);
+
+}
+
+.logo{
+width: 100px;
+height: auto;
+display: block;
+
+}
+.barra{
+     color:black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    flex-flow: row;
+    display: flex;
+    align-items: center;
+}
