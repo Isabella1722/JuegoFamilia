@@ -1,0 +1,72 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    user-select: none;
+    overflow: hidden;
+
+}
+
+.cuentaRegresiva {
+
+    margin: auto;
+    text-align: center;
+    line-height: 600px;
+    width: 600px;
+    height: 600px;
+    color: white;
+    font-size: 350px;
+    border-radius: 50%;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(202, 118, 103);
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, line-height 0.5s ease-in-out;
+}
+
+/*pantalla mediana*/
+
+@media (max-width: 1300px) {
+
+    .cuentaRegresiva {
+        line-height: 500px;
+        font-size: 250px;
+        width: 500px;
+        height: 500px;
+        transition: width 0.5s ease-in-out, height 0.5s ease-in-out, line-height 0.5s ease-in-out;
+
+    }
+
+
+}
+
+/*pantalla celular*/
+
+@media (max-width: 800px) {
+
+    .cuentaRegresiva {
+        line-height: 400px;
+        font-size: 200px;
+        width: 400px;
+        height: 400px;
+        transition: width 0.5s ease-in-out, height 0.5s ease-in-out, line-height 0.5s ease-in-out;
+
+
+    }
+}
+
+
+
+/*pantalla celular*/
+
+@media (max-width: 450px) {
+
+    .cuentaRegresiva {
+        line-height: 200px;
+        font-size: 100px;
+        width: 200px;
+        height: 200px;
+        transition: width 0.5s ease-in-out, height 0.5s ease-in-out, line-height 0.5s ease-in-out;
+
+
+    }
+}
