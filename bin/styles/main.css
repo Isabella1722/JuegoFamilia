@@ -1,7 +1,6 @@
 * {
-    margin: 0;
+    font-family: 'Nunito', sans-serif;
 }
-
 
 html {
     width: 100%;
@@ -9,96 +8,134 @@ html {
 }
 
 body {
-
+    margin-top: -10%;
+    margin-left: 0;
     background-image: url("/data/img/fondo.jpg");
     background-size: cover;
-
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-
-
 }
 
 header {
     display: flex;
     width: 100%;
-
 }
 
 .barra {
-
     color: white;
     font-family: 'Nunito', sans-serif;
-
     font-size: 20px;
-
     display: flex;
     align-items: center;
+    margin: auto;
+    margin-top: 30vh;
+    flex-direction: column;
 }
-
-
-
 
 .contenido {
     margin: auto;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tituloCorreo{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-top: 20%;
+    margin-left: -103%;
+    display: inline-flex;
+}
+
+#tituloContrasena{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 20px;
+    margin-top: 20%;
+    margin-left: -82%;
+    display: inline-flex;
+}
+
+#emailLogin {
+    width: 140%;
+    height: 25px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-bottom: 0%;
+    color: rgb(94, 94, 94);
+}
+
+#passwordLogin{
+    width: 140%;
+    height: 25px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+
+    margin-top: 0%;
 }
 
 #botonIngresar {
     background: green;
     border-style: none;
     color: white;
-    border-radius: 35px;
+    border-radius: 25px;
     width: 200px;
-    height: 60px;
+    height: 50px;
+    margin-top: 20%;
     font-size: 20px;
     font-weight: 600;
-    transition: background 0.3s ease-in-out , box-shadow 0.3s ease-in-out;
-
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 #botonIngresar:hover {
     background: rgb(196, 218, 3);
-    transition: background 0.3s ease-in-out , box-shadow 0.3s ease-in-out;
-    box-shadow: 0px 0px 0px 7px  rgb(196, 218, 3) ;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 0px 7px rgb(196, 218, 3);
+}
+
+#registrarBoton{
+    margin-top: 12%;
+    align-items: center;
+    color: white;
+    font-style: initial;
+    font-size: 130%;
+
 }
 
 .logo {
     width: 100px;
     display: block;
-
 }
-
-
 
 /*pantallla de celular*/
 
 @media (max-width: 1300px) {
-
     .barra {
-
-
-        margin: auto;
-        margin-top: 30vh;
+        
+        margin-top: 10vh;
         flex-direction: column;
-
     }
-
     .logo {
         width: 140px;
         display: block;
         padding-bottom: 20px;
-
     }
-
     .contenido {
-        margin: 50px auto;
+        margin: auto;
+        margin-top: -5%;
     }
 
+    .tituloWeb{
+        display: none;
+    }
 
-
-
-
-
+    #emailLogin{
+        margin-bottom: 10%;
+    }
 }
