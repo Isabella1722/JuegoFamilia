@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-image: url("/data/img/intru2.png");
+    background-color: #f8c55f;
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
@@ -16,16 +16,41 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
+    background-repeat: none;
     display: flex;
     flex-direction: column;
 }
 
+#derecha {
+    position: fixed;
+    right: 0;
+    top: 2%;
+    width: 20%;
+    height: auto;
+}
+
+#izquierda{
+    position: fixed;
+    left: 0;
+    bottom: 2%;
+    width: 20%;
+    height: auto;
+}
+
+#medio{
+    position: fixed;
+    left: 41.5%;
+    top: 28%;
+    width: 200px;
+    height: auto;
+}
+
 .Paso1 {
-    margin-left: -3%;
-    position: absolute;
-    left: 48%;
-    top: 44%;
+    position: fixed;
+    left: 45%;
+    top: 20%;
     text-align: center;
+    
 }
 
 .descripcion {
@@ -34,33 +59,19 @@ body {
     height: 70%;
     display: flex;
     flex-direction: column;
-    margin-left: 23%;
-    position: absolute;
-    top: 51%;
+    position: fixed;
+    left: 23%;
+    top: 35%;
 }
 
 .descripcion p {
-    margin-top: 5%;
     text-align: center;
-    font-size: 200%;
+    font-size: 140%;
 }
 
 .siguiente {
+    position: fixed;
+    left: 80%;
+    bottom: 54%;
     width: 4%;
-    position: absolute;
-    left: 76.16%;
-    right: 28%;
-    top: 58%;
-    bottom: 40%;
-}
-
-.atras{
-    width: 4%;
-    position: absolute;
-    left: 15%;
-    right: 23%;
-    top: 59%;
-    bottom: 40%;
-    
-    
 }

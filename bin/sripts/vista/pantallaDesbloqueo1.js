@@ -22,12 +22,9 @@ let hiloPorSegundo = setInterval(function () {
         contador.style.color = "rgb(202, 118, 103)"
 
         contador.textContent = "¡VAMOS!"
+        let timeout = setTimeout(function () {
+            document.location.href = "./instruccion1.html"
+        }, 2000)
     }
 
 }, 1000)
-
-    if(segundos < -4){
-        document.location.href="./bin/views/PantallaRegistro.html"
-    }
-
-
