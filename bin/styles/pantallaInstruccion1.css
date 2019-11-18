@@ -8,8 +8,7 @@ html {
 }
 
 body {
-    background-image: url("/data/img/instru1.png");
-    
+    background-color: #a7cbcd;
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
@@ -22,10 +21,36 @@ body {
     flex-direction: column;
 }
 
+#derecha {
+    position: fixed;
+    right: 0;
+    top: 2%;
+    width: 20%;
+    height: auto;
+}
+
+#izquierda{
+    position: fixed;
+    left: 0;
+    bottom: 2%;
+    width: 20%;
+    height: auto;
+}
+
+#medio{
+    position: fixed;
+    left: 41.5%;
+    top: 28%;
+    width: 200px;
+    height: auto;
+}
+
 .Paso1 {
-    margin-left: -3%;
-    padding-top: 20%;
+    position: fixed;
+    left: 45%;
+    top: 20%;
     text-align: center;
+    
 }
 
 .descripcion {
@@ -34,19 +59,19 @@ body {
     height: 70%;
     display: flex;
     flex-direction: column;
-    margin-left: 23%;
+    position: fixed;
+    left: 23%;
+    top: 35%;
 }
 
 .descripcion p {
-    margin-top: 5%;
     text-align: center;
-    font-size: 200%;
+    font-size: 140%;
 }
 
 .siguiente {
     position: fixed;
     left: 80%;
-    bottom: 35%;
+    bottom: 54%;
     width: 4%;
-   
 }
