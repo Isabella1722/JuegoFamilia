@@ -1,0 +1,13 @@
+html{
+    width: 50%;
+    height: 50%;
+}
+
+body{
+    background-image: url("/data/img/Instruccion1.png");
+    background-size: cover;
+    width: 200%;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+}

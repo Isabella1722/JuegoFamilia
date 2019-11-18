@@ -20,7 +20,8 @@ let contadorHilo = setInterval(function(){
 
 btnIngresar.addEventListener("click", function(){
 
-    document.location.href="./bin/views/PantallaDesbloqueo1.html"
+    //document.location.href="./bin/views/PantallaDesbloqueo1.html"
+    document.location.href="./bin/views/instruccion1.html"
 
  
 
