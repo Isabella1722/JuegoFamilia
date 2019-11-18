@@ -23,7 +23,7 @@ let hiloPorSegundo = setInterval(function () {
 
         contador.textContent = "¡VAMOS!"
         let timeout = setTimeout(function () {
-            document.location.href = "./instruccion1.html"
+            document.location.href = "./pantallaAdivinanza.html"
         }, 2000)
     }
 
