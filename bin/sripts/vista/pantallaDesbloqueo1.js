@@ -26,4 +26,8 @@ let hiloPorSegundo = setInterval(function () {
 
 }, 1000)
 
+    if(segundos < -4){
+        document.location.href="./bin/views/PantallaRegistro.html"
+    }
+
 
