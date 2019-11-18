@@ -1,13 +1,48 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
 html {
     width: 100%;
     height: 100%;
 }
 
 body {
-    background-image: url("/data/img/Instruccion1.jpg");
+    background-image: url("/data/img/instru1.png");
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
-    width: 200%;
-    height: 200%;
     display: flex;
     flex-direction: column;
+}
+
+.Paso1 {
+    margin-left: -3%;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.descripcion {
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 23%;
+}
+
+.descripcion p {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 200%;
+}
+
+.siguiente {
+    width: 4%;
+    margin-left: 85%;
+    margin-top: -31%;
 }
