@@ -1,10 +1,10 @@
 html{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 body{
-    background-image: url("/data/img/Instruccion1.png");
+    background-image: url("/data/img/Instruccion1.jpg");
     background-size: cover;
     width: 200%;
     height: 200%;
