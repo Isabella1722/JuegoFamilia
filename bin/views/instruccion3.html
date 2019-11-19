@@ -6,25 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/src/styles/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./../styles/pantallaInstruccion3.css">
 </head>
 
 <body>
-    <img id="derecha" src="./../../data/img/iconoderecha.png" alt="der">
-    <img id="izquierda" src="./../../data/img/iconoizquierda.png" alt="izq">
-    <img id="medio" src="./../../data/img/iconomedio.png" alt="med">
-    <h1 class="Paso1">Paso 3</h1>
-    <div class="descripcion">
-        <p>¡No olviden armar el rompecabezas!</p>
-        <p>En cada adivinanza desbloquearás un tesoro.</p>
-    </div>
-    <a class="atras" href="./instruccion2.html">
-        <img src="./../../data/img/atras.png" alt="atras">
-    </a>
+        <img id="derecha" src="./../../data/img/iconoderecha.png" alt="der">
+        <img id="izquierda" src="./../../data/img/iconoizquierda.png" alt="izq">
+    
+        <main class="contenidoInstrucciones animated bounceInRight">
+            <div id="tituloInstru">
+                <h1 class="Paso1">Paso 3</h1>
+                <img id="medio" src="./../../data/img/iconomedio.png" alt="med">
+            </div>
+    
+            <div class="texto-botones">
+                <div id="contenedorIzquierda">
+                    <a class="atras" href="./instruccion2.html">
+                        <img class="botonNavegar" src="./../../data/img/atras.png" alt="atras">
+                    </a>
+                </div>
+    
+                <div id="contenedorParrafo">
+                    <p>¡No olviden armar el rompecabezas! En cada adivinanza desbloquearás un tesoro.</p>
+          
+                </div>
+    
+                <div id="contenedorD">
+                   
 
-    <button id="botonVamos">¡Vamos!</button>
-    <script src="./../sripts/vista/pantallaIntruccion3.js"></script>
+                </div>
+    
+
+
+            </div>
+            <div id="boton">
+                    <button id="botonVamos">¡Vamos!</button>
+                    <script src="./../sripts/vista/pantallaIntruccion3.js"></script>
+            </div>
+
+
+        </main>
 </body>
 
 </html>

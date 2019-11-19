@@ -15,12 +15,32 @@ body {
     margin-right: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-repeat: none;
+    overflow-y: hidden;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    overflow-x: hidden;
+}
+#botonVamos {
+    background: #594D94;
+    border-style: none;
+    color: white;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    margin-top: 20%;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+#botonVamos:hover {
+    background: rgb(134, 119, 211);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 0px 7px rgb(134, 119, 211);
+}
 #derecha {
     position: fixed;
     right: 0;
@@ -29,7 +49,11 @@ body {
     height: auto;
 }
 
-#izquierda{
+#contenedorD{
+    width: 59px;
+    height: 61px;
+}
+#izquierda {
     position: fixed;
     left: 0;
     bottom: 2%;
@@ -37,62 +61,135 @@ body {
     height: auto;
 }
 
-#medio{
-    position: fixed;
-    left: 41.5%;
-    top: 28%;
-    width: 200px;
+.contenidoInstrucciones {
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#tituloInstru {
+    width: 20%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 .Paso1 {
-    position: fixed;
-    left: 45%;
-    top: 20%;
-    text-align: center;
-    
+    font-size: 30px;
+  
+}
+#boton{
+align-items: center;
+    height: 60%;
+    margin: 0 auto;
+
 }
 
-.descripcion {
-    align-items: center;
-    width: 50%;
-    height: 70%;
+#medio {
+    width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    left: 23%;
-    top: 35%;
+    align-items: center;
+    align-content: center;
 }
 
-.descripcion p {
+.texto-botones {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0 auto;
     text-align: center;
-    font-size: 140%;
-}
-
-.siguiente {
-    position: fixed;
-    left: 80%;
-    bottom: 54%;
-    width: 4%;
-}
-
-#botonVamos {
-    background: #594d94;
-    border-style: none;
-    color: white;
-    border-radius: 25px;
-    width: 200px;
-    height: 50px;
+    width: 60%;
+    
     font-size: 20px;
-    font-weight: 600;
-    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    position: absolute;
-    top: 85%;
-    left: 41%;
 }
 
-#botonVamos:hover {
-    background: rgb(196, 218, 3);
-    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0px 0px 0px 7px rgb(196, 218, 3);
+
+@media (max-width: 450px) {
+    .Paso1 {
+        font-size: 15px;
+     
+    }
+    #medio {
+        width: 110%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .botonNavegar {
+        width: 30px;
+        height: auto;
+    }
+    p {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        height: 45px;
+        font-size: 15px;
+    }
+    #contenedorD{
+        width: 70px;
+        height: 61px;
+    }
+
+    .texto-botones {
+        width: 85%;
+        height: 70%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-between;
+    }
+
+    .contenidoInstrucciones {
+        margin: 0 auto;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    #derecha {
+        position: fixed;
+        right: 0;
+        top: 2%;
+        width: 30%;
+        height: auto;
+    }
+    
+    #izquierda {
+        position: fixed;
+        left: 0;
+        bottom: 2%;
+        width: 35%;
+        height: auto;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    #botonVamos {
+       margin-top:25%;
+        width: 150px;
+        height: auto;
+      
+    }
 }
