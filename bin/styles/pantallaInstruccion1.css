@@ -27,17 +27,18 @@ body {
 #derecha {
     position: fixed;
     right: 0;
-    top: 2%;
-    width: 20%;
-    height: auto;
+    top: 10px;
+    width: 300px;
+    height: 210px;
 }
 
 #izquierda {
     position: fixed;
     left: 0;
-    bottom: 2%;
-    width: 20%;
-    height: auto;
+    bottom: 10px;
+
+    width: 300px;
+    height: 210px;
 }
 
 .contenidoInstrucciones {
