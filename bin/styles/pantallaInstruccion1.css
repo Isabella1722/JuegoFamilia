@@ -150,4 +150,9 @@ p {
         width: 35%;
         height: auto;
     }
+    body {
+      
+        overflow-x: hidden;
+    }
+    
 }
