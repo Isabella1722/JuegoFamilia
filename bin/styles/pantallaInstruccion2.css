@@ -93,6 +93,14 @@ p {
     width: 70%;
     font-size: 20px;
 }
+.atras{
+    cursor: pointer;
+    }
+    
+    .siguiente{
+        cursor: pointer;
+    }
+    
 
 @media (max-width: 603px) {
     #tituloInstru {

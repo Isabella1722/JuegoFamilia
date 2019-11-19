@@ -24,6 +24,7 @@ body {
 }
 
 #derecha {
+
     position: fixed;
     right: 0;
     top: 10px;
@@ -94,6 +95,14 @@ p {
     font-size: 20px;
 }
 
+.atras{
+cursor: pointer;
+}
+
+.siguiente{
+    cursor: pointer;
+}
+
 @media (max-width: 603px) {
     #tituloInstru {
         width: 40%;
@@ -115,11 +124,13 @@ p {
         flex-direction: column;
         align-items: center;
         align-content: center;
+   
         
     }
     .botonNavegar {
         width: 30px;
         height: auto;
+   
     }
     p {
         margin: 0 auto;
