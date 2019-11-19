@@ -97,14 +97,7 @@ p {
     width: 70%;
     font-size: 20px;
 }
-.atras{
-    cursor: pointer;
-    }
-    
-    .siguiente{
-        cursor: pointer;
-    }
-    
+
 #botonVamos {
     background: #594D94;
     border-style: none;
@@ -120,11 +113,10 @@ p {
 #botonVamos:hover {
     background: rgb(134, 119, 211);
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 25px;
     box-shadow: 0px 0px 0px 7px rgb(134, 119, 211);
 }
 
-@media (max-width: 603px) {
+@media (max-width: 603px), (max-height: 543px) {
     #tituloInstru {
         width: 40%;
         height: auto;
@@ -166,13 +158,12 @@ p {
     .contenidoInstrucciones {
         margin: 0 auto;
         width: 100%;
-        height: 60%;
+        height: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         align-content: center;
     }
-
     #derecha {
         position: fixed;
         right: 0;
@@ -180,7 +171,6 @@ p {
         width: 160px;
         height: 110px;
     }
-
     #izquierda {
         position: fixed;
         left: 0;
@@ -188,12 +178,10 @@ p {
         width: 160px;
         height: 100px;
     }
-
     #contenedorD {
         width: 30px;
         height: 23.28px;
     }
-
     #botonVamos {
         width: 150px;
         height: auto;
