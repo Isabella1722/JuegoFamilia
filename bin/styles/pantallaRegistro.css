@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 html {
@@ -199,23 +200,44 @@ input {
     background-color: rgba(0, 0, 0, 0.459);
     justify-content: center;
     align-items: center;
-    
 }
 
-.modalContenedor.open{
+.modalContenedor.open {
     display: flex;
-
 }
 
-.modal{
-
+.modal {
     display: none;
     background-color: white;
     width: 80%;
     height: 80%;
 }
 
-.modal.open{
-display: flex;
+.modal img {
+    align-self: flex-end;
+    margin-top: 2%;
+    margin-right: 2%;
+    width: 42px;
+    height: 40px;
+}
 
+.modal h1 {
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 80%;
+    color: #89493F;
+}
+
+.modal p {
+    margin: 0 auto;
+    margin-top: 2%;
+    height: 80%;
+    width: 80%;
+    color: black;
+}
+
+.modal.open {
+    display: flex;
+    flex-direction: column;
 }

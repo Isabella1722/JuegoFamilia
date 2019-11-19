@@ -4,6 +4,7 @@ let btnRegistrar = document.querySelector("#botonRegistrar");
 let palabra = document.querySelector("#textoCheck")
 let contenedorModal = document.querySelector(".modalContenedor")
 let modal = document.querySelector(".modal")
+let botonSalir = document.querySelector("#salirBoton")
 
 let cont = 5;
 
@@ -23,7 +24,7 @@ palabra.addEventListener("click", function () {
 })
 
 document.addEventListener("click", function (event) {
-   if(event.target==contenedorModal){
+   if(event.target==botonSalir){
     modal.classList.remove("open")
     contenedorModal.classList.remove("open")
    }
