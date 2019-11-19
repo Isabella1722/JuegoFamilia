@@ -1,5 +1,6 @@
 * {
     font-family: 'Nunito', sans-serif;
+    overflow: hidden;
 }
 
 html {
@@ -15,14 +16,88 @@ body {
     margin-right: 0;
     width: 100%;
     height: 100%;
-    overflow-y: hidden;
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: center;
     align-content: center;
-    overflow-x: hidden;
 }
+
+#derecha {
+    position: fixed;
+    right: 0;
+    top: 10px;
+    width: 300px;
+    height: 210px;
+}
+
+#izquierda {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 300px;
+    height: 210px;
+}
+
+.contenidoInstrucciones {
+    margin: 0 auto;
+    width: 80%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#tituloInstru {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.Paso1 {
+    font-size: 30px;
+}
+
+#medio {
+    width: 120px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.texto-botones {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#contenedorParrafo {
+    width: 50%;
+}
+
+#contenedorD {
+    width: 67px;
+    height: 52px;
+}
+
+p {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    font-size: 20px;
+}
+
 #botonVamos {
     background: #594D94;
     border-style: none;
@@ -30,7 +105,6 @@ body {
     border-radius: 25px;
     width: 200px;
     height: 50px;
-    margin-top: 20%;
     font-size: 20px;
     font-weight: 600;
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -41,91 +115,21 @@ body {
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0px 0px 0px 7px rgb(134, 119, 211);
 }
-#derecha {
-    position: fixed;
-    right: 0;
-    top: 2%;
-    width: 20%;
-    height: auto;
-}
 
-#contenedorD{
-    width: 59px;
-    height: 61px;
-}
-#izquierda {
-    position: fixed;
-    left: 0;
-    bottom: 2%;
-    width: 20%;
-    height: auto;
-}
-
-.contenidoInstrucciones {
-    margin: 0 auto;
-    width: 80%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
-
-#tituloInstru {
-    width: 20%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
-
-.Paso1 {
-    font-size: 30px;
-  
-}
-#boton{
-align-items: center;
-    height: 60%;
-    margin: 0 auto;
-
-}
-
-#medio {
-    width: 80%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
-
-.texto-botones {
-    width: 70%;
-    height: 70%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-between;
-}
-
-p {
-    margin: 0 auto;
-    text-align: center;
-    width: 60%;
-    
-    font-size: 20px;
-}
-
-
-@media (max-width: 450px) {
+@media (max-width: 603px) {
+    #tituloInstru {
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
     .Paso1 {
-        font-size: 15px;
-     
+        font-size: 30px;
     }
     #medio {
-        width: 110%;
+        width: 120px;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -139,29 +143,22 @@ p {
     p {
         margin: 0 auto;
         text-align: center;
-        width: 90%;
-        height: 45px;
+        width: 100%;
         font-size: 15px;
     }
-    #contenedorD{
-        width: 70px;
-        height: 61px;
-    }
-
     .texto-botones {
-        width: 85%;
-        height: 70%;
+        width: 90%;
+        height: 60%;
         display: flex;
         align-content: center;
         align-items: center;
         justify-items: center;
         justify-content: space-between;
     }
-
     .contenidoInstrucciones {
         margin: 0 auto;
-        width: 80%;
-        height: 40%;
+        width: 100%;
+        height: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -171,25 +168,26 @@ p {
     #derecha {
         position: fixed;
         right: 0;
-        top: 2%;
-        width: 30%;
-        height: auto;
+        top: 10px;
+        width: 160px;
+        height: 110px;
     }
-    
+
     #izquierda {
         position: fixed;
         left: 0;
-        bottom: 2%;
-        width: 35%;
-        height: auto;
+        bottom: 10px;
+        width: 160px;
+        height: 100px;
     }
-    body {
-        overflow-x: hidden;
+
+    #contenedorD {
+        width: 30px;
+        height: 23.28px;
     }
+
     #botonVamos {
-       margin-top:25%;
         width: 150px;
         height: auto;
-      
     }
 }

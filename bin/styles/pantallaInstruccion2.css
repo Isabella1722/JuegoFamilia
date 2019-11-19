@@ -1,5 +1,6 @@
 * {
     font-family: 'Nunito', sans-serif;
+    overflow: hidden;
 }
 
 html {
@@ -15,29 +16,27 @@ body {
     margin-right: 0;
     width: 100%;
     height: 100%;
-    overflow-y: hidden;
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: center;
     align-content: center;
-    overflow-x: hidden;
 }
 
 #derecha {
     position: fixed;
     right: 0;
-    top: 2%;
-    width: 20%;
-    height: auto;
+    top: 10px;
+    width: 300px;
+    height: 210px;
 }
 
 #izquierda {
     position: fixed;
     left: 0;
-    bottom: 2%;
-    width: 20%;
-    height: auto;
+    bottom: 10px;
+    width: 300px;
+    height: 210px;
 }
 
 .contenidoInstrucciones {
@@ -51,7 +50,7 @@ body {
 }
 
 #tituloInstru {
-    width: 20%;
+    width: 40%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -61,11 +60,11 @@ body {
 
 .Paso1 {
     font-size: 30px;
-  
+
 }
 
 #medio {
-    width: 80%;
+    width: 120px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -74,13 +73,18 @@ body {
 }
 
 .texto-botones {
-    width: 70%;
-    height: 40%;
+    width: 100%;
+    height: 60%;
     display: flex;
     align-content: center;
     align-items: center;
     justify-items: center;
     justify-content: space-between;
+    padding: 0;
+}
+
+#contenedorParrafo{
+    width: 50%;
 }
 
 p {
@@ -90,18 +94,28 @@ p {
     font-size: 20px;
 }
 
-@media (max-width: 450px) {
-    .Paso1 {
-        font-size: 15px;
-     
-    }
-    #medio {
-        width: 110%;
+@media (max-width: 603px) {
+    #tituloInstru {
+        width: 40%;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         align-content: center;
+    }
+
+    .Paso1 {
+        font-size: 30px;
+     
+    }
+    #medio {
+        width: 120px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        
     }
     .botonNavegar {
         width: 30px;
@@ -110,13 +124,13 @@ p {
     p {
         margin: 0 auto;
         text-align: center;
-        width: 70%;
+        width: 100%;
         font-size: 15px;
     }
 
     .texto-botones {
         width: 85%;
-        height: 70%;
+        height: 50%;
         display: flex;
         align-content: center;
         align-items: center;
@@ -137,19 +151,17 @@ p {
     #derecha {
         position: fixed;
         right: 0;
-        top: 2%;
-        width: 30%;
-        height: auto;
+        top: 10px;
+        width: 160px;
+        height: 110px;
     }
-    
+
     #izquierda {
         position: fixed;
         left: 0;
-        bottom: 2%;
-        width: 35%;
-        height: auto;
+        bottom: 10px;
+        width: 160px;
+        height: 100px;
     }
-    body {
-        overflow-x: hidden;
-    }
+    
 }
