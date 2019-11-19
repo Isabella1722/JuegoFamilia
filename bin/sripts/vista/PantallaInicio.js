@@ -2,8 +2,17 @@
 
 
 let btnIngresar = document.querySelector("#botonIngresar");
-
+let ping
 let cont = 5;
+
+
+function preload() {
+    ping = loadSound("./../../sounds/sonido.mp3")
+}
+
+function setup() {
+ /*ping.loop();*/
+}
 
 /*
 let contadorHilo = setInterval(function(){
@@ -18,11 +27,15 @@ let contadorHilo = setInterval(function(){
 
 
 
-btnIngresar.addEventListener("click", function(){
+btnIngresar.addEventListener("click", function () {
+    ping.play();
 
-    document.location.href="./bin/views/instruccion1.html"
+    let retrasador = setTimeout(function () {
+        document.location.href = "./bin/views/instruccion1.html"
+    }, 500)
 
- 
+
+
 
 
 })
