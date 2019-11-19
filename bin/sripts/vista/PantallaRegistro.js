@@ -19,7 +19,8 @@ let contadorHilo = setInterval(function(){
 
 btnRegistrar.addEventListener("click", function(){
 
-    document.location.href="./bin/views/instruccion1.html"
+    document.location.href="./../../bin/views/instruccion1.html"
+    
 
  
 
