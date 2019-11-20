@@ -10,18 +10,18 @@ segundos -= 1;
 let hiloPorSegundo = setInterval(function () {
 
     contador.textContent = segundos;
-    if (segundos > 0) segundos -= 1;
+    if (segundos > -1) segundos -= 1;
 
 
-    if (segundos == 0) {
+    if (segundos == -1) {
 
         contador.classList.add("animated")
         contador.classList.add("heartBeat")
-        contador.style.fontSize = "70px"
+        contador.style.fontSize = "50px"
         contador.style.backgroundColor = "#FFFFFF"
         contador.style.color = "rgb(202, 118, 103)"
 
-        contador.textContent = "¡VAMOS!"
+        contador.textContent = "¡Vamos!"
         let timeout = setTimeout(function () {
             document.location.href = "./pantallaAdivinanza1.html"
         }, 2000)

@@ -118,6 +118,7 @@ p {
 
 @media (max-width: 603px), (max-height: 543px) {
     #tituloInstru {
+        margin-top: 15%;
         width: 40%;
         height: auto;
         display: flex;
@@ -148,7 +149,7 @@ p {
     }
     .texto-botones {
         width: 90%;
-        height: 60%;
+        height: 40%;
         display: flex;
         align-content: center;
         align-items: center;
