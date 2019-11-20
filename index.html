@@ -14,11 +14,11 @@
 
 </head>
 
-<body class="animated bounceInDown" >
+<body class="animated bounceInDown">
 
 
 
-    <header >
+    <header>
         <nav class="barra">
             <img class="logo" src="./data/img/logo.png" alt="F">
 
@@ -29,15 +29,23 @@
     </header>
     <main class="contenido">
         <input type="text" id="emailLogin" value="" placeholder="Correo">
-        <input type="password" id="passwordLogin"value="" placeholder="Contraseña">
+        <input type="password" id="passwordLogin" value="" placeholder="Contraseña">
         <button id="botonIngresar">INGRESAR</button>
         <a id="registrarBoton" href="./bin/views/PantallaRegistro.html">Registrarse</a>
 
-        
+
     </main>
 
     <script src="./src/p5.js"></script>
     <script src="./src/p5.sound.js"></script>
+
+
+    <!--Firebase Core-->
+    <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+    <!--Auth Core-->
+    <script defer src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <!--Realtime Database-->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
 
     <script src="./bin/sripts/vista/PantallaInicio.js"></script>
 
