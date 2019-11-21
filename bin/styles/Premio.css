@@ -18,3 +18,23 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.contenedorPremio{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.textoPremio{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.ImagenDelPremio{
+    width: 300px;
+}
