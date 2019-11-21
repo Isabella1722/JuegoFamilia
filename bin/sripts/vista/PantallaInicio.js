@@ -21,7 +21,7 @@ let cont = 5;
 
 
 function preload() {
-    ping = loadSound("./../../sounds/sonido.mp3")
+    ping = loadSound("./sounds/sonido.mp3")
 }
 
 function setup() {
