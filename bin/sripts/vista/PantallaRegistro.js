@@ -38,8 +38,8 @@ let contadorHilo = setInterval(function(){
 },1000);*/
 
 
-chekmark.addEventListener("click",function(){
- aceptoTerminos=!aceptoTerminos
+chekmark.addEventListener("click", function () {
+    aceptoTerminos = !aceptoTerminos
 })
 
 
@@ -63,15 +63,46 @@ document.addEventListener("click", function (event) {
 
 
 btnRegistrar.addEventListener("click", function () {
-
     let nombre = inputNombre.value
     let contrasena = inputContrasena.value
     let correo = inputCorreo.value
     correo = correo.toLowerCase()
     let verificar = inputVerificar.value
+    let existente = false
+
+
+    //lee el firebase
+    let ref = firebase.database().ref("usuarios/");
+    ref.on('value', function (snapshot) {
+
+      
+        //snapshotVal() recoge todos los elementos del firebase
+        let completeData = snapshot.val();
+
+        //Object.Keys() transforma todos los elemntos en un arreglo
+        let arregloDeDatos = Object.keys(completeData)
+
+        for (let i = 0; i < arregloDeDatos.length; i++) {
+
+            let id = arregloDeDatos[i]
+            let correoDB = completeData[id].correo;
+           
+            if (correo == correoDB) {
+                existente = true
+            }
+        }
+        console.log(existente)
+
+    }, function (err) {
+        console.log(err)
+    });
+
+
+
+
 
     if (contrasena == verificar && correo.includes('@') &&
-        correo.includes('.com') && nombre.length > 0 && contrasena.length > 0 && aceptoTerminos) {
+        correo.includes('.com') && nombre.length > 0 && contrasena.length > 0 && aceptoTerminos && existente == false) {
         firebase.database().ref('usuarios/').push({
             nombre: nombre,
             pass: contrasena,
@@ -84,6 +115,8 @@ btnRegistrar.addEventListener("click", function () {
 
         }, 1000)
 
+    } else if (existente) {
+        alert('El correo ya esta registrado')
     } else if (nombre.length == 0) {
         alert('Ingrese un nombre')
     } else if (contrasena.length == 0) {
@@ -92,17 +125,8 @@ btnRegistrar.addEventListener("click", function () {
         alert('Ingrese un correo valido')
     } else if (contrasena != verificar) {
         alert('Las contrasenas no coinciden')
-    } else if (aceptoTerminos==false) {
+    } else if (aceptoTerminos == false) {
         alert('Acepta las condiciones')
     }
-
-
-
-
-
-
-
-
-
 
 })
