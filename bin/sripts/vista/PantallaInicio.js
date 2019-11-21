@@ -1,4 +1,9 @@
 
+var logged = localStorage.getItem('logged')
+
+if(logged=='true'){
+    document.location.href = "./bin/views/instruccion1.html"
+}
 var firebaseConfig = {
     apiKey: "AIzaSyBohk7vWZEwnYrclr8UdsfZPDwArRigMqo",
     authDomain: "familiapi.firebaseapp.com",
@@ -18,6 +23,9 @@ let passInput = document.querySelector('#passwordLogin')
 let btnIngresar = document.querySelector("#botonIngresar");
 let ping
 let cont = 5;
+
+
+
 
 
 function preload() {
@@ -65,7 +73,8 @@ btnIngresar.addEventListener("click", function () {
 
             if (correo == correoDB) {
                 if (pass == passDB) {
-                    ping.play();
+                    ping.play();    
+                    localStorage.setItem('logged', 'true')
                     let retrasador = setTimeout(function () {
                         document.location.href = "./bin/views/instruccion1.html"
                     }, 500)

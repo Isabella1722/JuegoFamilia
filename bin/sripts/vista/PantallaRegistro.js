@@ -1,4 +1,8 @@
+var logged = localStorage.getItem('logged')
 
+if(logged=='true'){
+    document.location.href = "./bin/views/instruccion1.html"
+}
 
 let btnRegistrar = document.querySelector("#botonRegistrar");
 let palabra = document.querySelector("#textoCheck")
@@ -109,6 +113,9 @@ btnRegistrar.addEventListener("click", function () {
             correo: correo
 
         });
+
+
+        localStorage.setItem('logged', 'true')
 
         let retraso = setTimeout(function () {
             document.location.href = "./../../bin/views/instruccion1.html"
