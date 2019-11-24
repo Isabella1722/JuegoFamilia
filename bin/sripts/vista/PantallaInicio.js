@@ -1,6 +1,6 @@
 
 var logged = localStorage.getItem('logged')
-
+logged = false;
 if(logged=='true'){
     document.location.href = "./bin/views/instruccion1.html"
 }

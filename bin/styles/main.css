@@ -19,12 +19,17 @@ body {
     overflow-y: hidden;
 }
 
-header {
+/*header {
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-}
+}*/
 
 .barra {
+    width: 100%;
     color: #89493F;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
@@ -32,42 +37,42 @@ header {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 3%;
     flex-direction: column;
 }
 
+.logo {
+    width: 150px;
+    display: block;
+}
+
+.barra h1 {
+    margin-top: 15px;
+}
+
 .contenido {
+    width: 100%;
     margin: 0 auto;
-    margin-top: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#tituloCorreo {
-    font-family: 'Nunito', sans-serif;
+.inicioDescripcion {
+    width: 400px;
     color: #89493F;
-    font-size: 20px;
-    margin-top: 0%;
-    margin-left: -103%;
-    display: inline-flex;
-}
-
-#tituloContrasena {
-    font-family: 'Nunito', sans-serif;
-    color: #89493F;
-    font-size: 20px;
-    margin-top: 8%;
-    margin-left: -82%;
-    display: inline-flex;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
 }
 
 #emailLogin {
-    width: 140%;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.753);
+    margin-top: 25px;
+    width: 350px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.3);
     margin-bottom: 0%;
-    color: rgb(94, 94, 94);
+    color: #89493F;
     padding-left: 25px;
     border-radius: 15px;
     border-width: 0;
@@ -75,26 +80,26 @@ header {
 }
 
 #passwordLogin {
-    width: 140%;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.753);
+    margin-top: 20px;
+    width: 350px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.3);
     margin-bottom: 0%;
-    color: rgb(94, 94, 94);
+    color: #89493F;
     padding-left: 25px;
     border-radius: 15px;
     border-width: 0;
     border-style: solid;
-    margin-top: 8%;
 }
 
 #botonIngresar {
+    margin-top: 30px;
     background: #89493F;
     border-style: none;
     color: white;
     border-radius: 25px;
     width: 200px;
     height: 50px;
-    margin-top: 20%;
     font-size: 20px;
     font-weight: 600;
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -107,29 +112,23 @@ header {
 }
 
 #registrarBoton {
-    margin-top: 12%;
+    margin-top: 30px;
     align-items: center;
     color: #89493F;
     font-style: initial;
-    font-size: 130%;
-}
-
-.logo {
-    width: 150px;
-    display: block;
+    font-size: 20px;
 }
 
 /*pantallla de celular*/
 
-@media (max-width: 1300px) {
-    .barra {
+@media (max-width: 603px), (max-height: 595px) {
+    /*.barra {
         margin-top: 10vh;
         flex-direction: column;
     }
     .logo {
         width: 140px;
         display: block;
-        padding-bottom: 20px;
     }
     .contenido {
         margin: auto;
@@ -140,5 +139,36 @@ header {
     }
     #emailLogin {
         margin-bottom: 10%;
+    }*/
+    .contenido {
+        margin-top: 12px;
+    }
+    .logo {
+        width: 125px;
+    }
+    .barra h1 {
+        font-size: 20px;
+    }
+    .inicioDescripcion {
+        width: 240px;
+        font-size: 12px;
+    }
+    #emailLogin {
+        width: 200px;
+        height: 35px;
+    }
+    #passwordLogin {
+        width: 200px;
+        height: 35px;
+    }
+    #botonIngresar {
+        width: 180px;
+        height: 50px;
+    }
+    #registrarBoton {
+        margin-top: 10px;
+        width: 180px;
+        height: 50px;
+        text-align: center;
     }
 }
