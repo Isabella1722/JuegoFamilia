@@ -1,9 +1,10 @@
 
 var logged = localStorage.getItem('logged')
-logged = false;
-if(logged=='true'){
+
+
+/*if(logged=='true'){
     document.location.href = "./bin/views/instruccion1.html"
-}
+}*/
 var firebaseConfig = {
     apiKey: "AIzaSyBohk7vWZEwnYrclr8UdsfZPDwArRigMqo",
     authDomain: "familiapi.firebaseapp.com",
