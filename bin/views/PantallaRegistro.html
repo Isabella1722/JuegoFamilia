@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./../styles/pantallaRegistro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./../../data/img/logo.png"> 
+    <link rel="icon" type="image/png" href="./../../data/img/logo.png">
 
 </head>
 
@@ -27,53 +27,58 @@
 
         <main class="contenido animated bounceInRight">
 
-            <h1 class="titulo">Registro de usuario</h1>
+            <h1 class="tituloRegistro">Registro de usuario</h1>
 
+            <div class="subcontenido">
 
-            <div class="nombreInput">
+                <input type="text" class="input nombre" value="" placeholder="Nombre">
 
-                <input type="text" class="input ancho nombre" value="" placeholder="Nombre">
-            </div>
+                <input type="email" class="input correo" value="" placeholder="Correo">
 
-            <div class="correoInput">
+                <div class="contrasenaVerificar">
 
-                <input type="text" class="input ancho correo" value="" placeholder="Correo">
+                    <div class="contrasenaInput">
+                        <input type="password" class="inputPw contrasena" placeholder="Contraseña">
+                    </div>
 
-            </div>
+                    <div class="verificarInput">
+                        <input type="password" class="inputPw verificar" placeholder="Verificar contraseña">
 
-            <div class="contrasenaVerificar">
+                    </div>
 
+                </div>
 
-                <div class="verificarInput">
+                <div class="condiciones">
+                    <label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p id="textoCheck">Acepto las condiciones.</p>
+                </div>
 
-                    <input type="password" class="input contrasena" placeholder="Contraseña">
-
-                    <input type="password" class="input verificar" placeholder="Verificar contraseña">
-
+                <div class="contenedorBtnRegistro">
+                    <button id="botonRegistrar">Registrarse</button>
                 </div>
 
             </div>
 
-            <div class="condiciones">
-                <label class="container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-
-                </label>
-                <p id="textoCheck">Acepto las condiciones.</p>
-            </div>
-
-
-            <button id="botonRegistrar">Registrarse</button>
+        </main>
 
     </div>
-
 
     <div class="modalContenedor animated bounceInDown">
         <div class="modal">
             <img id="salirBoton" src="./../../data/img/x.png" alt="F">
             <h1>Términos y condiciones</h1>
-            <p>Al aceptar los presentes Términos y condiciones, así como las políticas de Privacidad de Adivina Calima, el usuario Autoriza, de manera voluntaria, expresa e informada a Adivina Calima para recolectar, registrar, procesar, difundir y comercializar todos los datos e información que el usuario de forma voluntaria suministre en el momento del registro. Con base en lo anterior, Adivina Calima, sus subsidiarias, filiales y demás personas o sociedades con quien ésta contrate tales actividades, mediante el envío de e-mail, mensaje de texto (SMS y/o MMS) o a través de cualquier medio análogo y/o digital de comunicación, conocido o por conocer, podrá reproducir, publicar, traducir, adaptar, extraer o compendiar los datos o la información suministrada, así como disponer de los datos o la información a título gratuito de acuerdo y bajo los términos de la Ley 1581 de 2012.</p>
+            <p>Al aceptar los presentes Términos y condiciones, así como las políticas de Privacidad de Adivina Calima,
+                el usuario Autoriza, de manera voluntaria, expresa e informada a Adivina Calima para recolectar,
+                registrar, procesar, difundir y comercializar todos los datos e información que el usuario de forma
+                voluntaria suministre en el momento del registro. Con base en lo anterior, Adivina Calima, sus
+                subsidiarias, filiales y demás personas o sociedades con quien ésta contrate tales actividades, mediante
+                el envío de e-mail, mensaje de texto (SMS y/o MMS) o a través de cualquier medio análogo y/o digital de
+                comunicación, conocido o por conocer, podrá reproducir, publicar, traducir, adaptar, extraer o
+                compendiar los datos o la información suministrada, así como disponer de los datos o la información a
+                título gratuito de acuerdo y bajo los términos de la Ley 1581 de 2012.</p>
 
         </div>
     </div>
