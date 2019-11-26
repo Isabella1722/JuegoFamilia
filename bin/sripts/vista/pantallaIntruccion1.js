@@ -40,10 +40,17 @@ btnAtras.addEventListener("click", function () {
 
 
 btnSiguiente.addEventListener("click", function () {
-    
+       
+    boton.play(); 
+    let retraso = setTimeout(function () {
+        
+        
+     
     document.location.href ="./../../bin/views/instruccion2.html";
-   
-        boton.play(); 
+        
+
+    }, 1000)
+    
 
 
 
