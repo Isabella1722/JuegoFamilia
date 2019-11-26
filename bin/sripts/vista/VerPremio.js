@@ -25,27 +25,16 @@ let randomizador = parseInt(Math.random() * 2)
 
 switch (premioAdivinanza) {
     case 'aguila':
-        //if (randomizador == 0) {
-            //imagenDelPremio.src = "./../../data/img/source.gif"
-           // localStorage.setItem('premioLibro', '1')
+        if (randomizador == 0) {
+            imagenDelPremio.src = "./../../data/img/libro1.png"
+            localStorage.setItem('premioLibro', '1')
 
-        //} else if (randomizador == 1) {
-            imagenDelPremio.src = "./../../data/img/source.gif"
-            //localStorage.setItem('premioLibro', '2')
+        } else if (randomizador == 1) {
+            imagenDelPremio.src = "./../../data/img/libro2.png"
+            localStorage.setItem('premioLibro', '2')
 
-        //}
-        textoPremio.textContent = "¡Ganaste un cuento!"
+        }
+        textoPremio.textContent = "Cuento"
 
         break;
 }
-
-btnVerPremio.addEventListener("click", function () {
-
-    //localStorage.setItem('adivinanza', 'aguila')
-
-    let retraso = setTimeout(function () {
-        document.location.href = "./../../bin/views/VerPremio.html";
-
-    }, 500)
-})
-
