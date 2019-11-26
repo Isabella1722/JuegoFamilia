@@ -2,8 +2,25 @@ let btnAtras = document.querySelector(".atras");
 let main = document.querySelector(".contenidoInstrucciones");
 let btnSiguiente = document.querySelector(".siguiente");
 
-btnAtras.addEventListener("click", function () {
+let boton;
+let sonidoF;
 
+
+function preload() {
+    boton = loadSound("./../../sounds/boton.mp3");
+    sonidoF = loadSound("./../../sounds/inicioCorte.mp3");
+}
+
+function setup() {
+  
+    sonidoF.loop();
+    /*sonidoF.loop();*/
+
+  
+}
+
+btnAtras.addEventListener("click", function () {
+    boton.play();
     main.classList.remove("bounceInLeft");
     main.classList.add("bounceOutLeft");
 
@@ -17,8 +34,16 @@ btnAtras.addEventListener("click", function () {
 })
 
 btnSiguiente.addEventListener("click", function () {
+    boton.play();
 
-    document.location.href ="./../../bin/views/instruccion3.html";
+    
+    let retraso = setTimeout(function () {
+        
+        
+        document.location.href ="./../../bin/views/instruccion3.html";
+        
+
+    }, 1000)
 
 
 })
