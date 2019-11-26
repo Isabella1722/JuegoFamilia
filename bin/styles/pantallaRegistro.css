@@ -517,3 +517,29 @@ body {
         height: 30px;
     }
 }
+
+@media (max-height: 455px) {
+
+
+    .tituloRegistro{
+        font-size: 20px;
+    }
+
+    .input{
+        height: 30px;
+    }
+
+    .inputPw{
+        height: 30px;
+    }
+
+    .tituloRegistro{
+        margin-bottom: 0;
+    }
+
+    #botonRegistrar{
+        width: 130px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
