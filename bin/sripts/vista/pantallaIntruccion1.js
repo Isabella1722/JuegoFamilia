@@ -31,7 +31,7 @@ btnAtras.addEventListener("click", function () {
     let retraso = setTimeout(function () {
         
         
-        document.location.href = "./../../../index.html";
+        document.location.href = "./index.html";
         
 
     }, 1000)
