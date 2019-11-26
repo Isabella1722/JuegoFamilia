@@ -130,6 +130,7 @@ btnSiguiente.addEventListener("click", function () {
                 break;
 
             case 'armadillo':
+                document.location.href = "./../../bin/views/Mochila.html";
 
                 break;
         }
