@@ -36,8 +36,8 @@ function preload() {
 }
 
 function setup() {
-    /*sonidoF.loop();*/
     sonidoF.loop();
+  
 }
 
 /*
