@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background:#545587;
+    background: #545587;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -36,7 +36,7 @@ body {
     height: 210px;
 }
 
-.contenedorPremio{
+.contenedorPremio {
     position: fixed;
     display: none;
     flex-direction: column;
@@ -45,14 +45,14 @@ body {
     align-items: center;
 }
 
-.textoPremio{
+.textoPremio {
     font-size: 60px;
     color: white;
     text-align: center;
     width: 100%;
 }
 
-.ImagenDelPremio{
+.ImagenDelPremio {
     width: 300px;
 }
 
@@ -85,4 +85,89 @@ body {
     background: rgb(253, 220, 153);
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0px 0px 0px 7px rgb(253, 220, 153);
+}
+
+@media (max-width: 1176px) {
+    .textoPremio {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 603px), (max-height: 543px) {
+    #derecha {
+        position: fixed;
+        right: 0;
+        top: 10px;
+        width: 160px;
+        height: 110px;
+    }
+    #izquierda {
+        position: fixed;
+        left: 0;
+        bottom: 10px;
+        width: 160px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .textoPremio {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 320px), (max-height: 568px) {
+    .contenedorPremio {
+        width: 100%;
+    }
+    .textoPremio {
+        font-size: 20px;
+    }
+    .ImagenDelPremio {
+        width: 240px;
+    }
+    #botonCompletado {
+        overflow: visible;
+        width: 150px;
+        height: 40px;
+        font-size: 19px;
+    }
+}
+
+@media (max-height: 358px) {
+    .textoPremio {
+        font-size: 24px;
+    }
+    .ImagenDelPremio {
+        width: 230px;
+    }
+}
+
+@media (max-height: 330px) {
+    .ImagenDelPremio {
+        width: 180px;
+    }
+}
+
+@media (max-width: 487px){
+    .textoPremio{
+        font-size: 20px;
+    }
+
+    #derecha {
+        position: fixed;
+        right: 0;
+        top: 10px;
+        width: 70px;
+        height: 50px;
+    }
+    #izquierda {
+        position: fixed;
+        left: 0;
+        bottom: 10px;
+        width: 70px;
+        height: 50px;
+    }
+}
 }
