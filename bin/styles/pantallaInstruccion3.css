@@ -123,7 +123,7 @@ p {
 
 @media (max-width: 603px), (max-height: 543px) {
     #tituloInstru {
-        margin-top: 15%;
+        margin-top: 50px;
         width: 40%;
         height: auto;
         display: flex;
