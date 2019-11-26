@@ -3,6 +3,10 @@ let imagenDelPremio = document.querySelector(".ImagenDelPremio")
 let textoPremio = document.querySelector(".textoPremio")
 let contenedorPremio = document.querySelector(".contenedorPremio")
 let btnSiguiente = document.querySelector("#botonCompletado")
+let cuerpo = document.querySelector(".Cuerpo")
+
+let derecha = document.querySelector("#derecha")
+let izquierda = document.querySelector("#izquierda")
 
 let premioAdivinanza = localStorage.getItem("premioAdivinanza")
 let randomizador = parseInt(Math.random() * 2)
@@ -25,6 +29,7 @@ contenedorPremio.classList.add("zoomIn")
 
 switch (premioAdivinanza) {
     case 'aguila':
+
         if (randomizador == 0) {
             imagenDelPremio.src = "./../../data/img/libro1.png"
             localStorage.setItem('premioLibro', '1')
@@ -35,10 +40,15 @@ switch (premioAdivinanza) {
 
         }
         textoPremio.textContent = "Cuento"
+        textoPremio.fontFamily = "'Nunito', sans-serif"
 
         break;
 
     case 'gueopardo':
+
+        derecha.src = "./../../data/img/iconoDerecho2.png"
+        izquierda.src = "./../../data/img/iconoIzquierdo2.png"
+        cuerpo.style.background = "#F3E3D1"
         if (randomizador == 0) {
             imagenDelPremio.src = "./../../data/img/rompe1.png"
             localStorage.setItem('premioRommpe', '1')
@@ -49,10 +59,17 @@ switch (premioAdivinanza) {
 
         }
         textoPremio.textContent = "Rompecabezas"
+        textoPremio.style.color = "black"
+        textoPremio.fontFamily = "'Nunito', sans-serif"
+        btnSiguiente.style.background = "#BA563C"
 
         break;
 
     case 'rana':
+
+        derecha.src = "./../../data/img/iconoDerecho2.png"
+        izquierda.src = "./../../data/img/iconoIzquierdo2.png"
+        cuerpo.style.background = "#F8C65F"
         if (randomizador == 0) {
             imagenDelPremio.src = "./../../data/img/mascara1.png"
             localStorage.setItem('premioMasca', '1')
@@ -63,10 +80,17 @@ switch (premioAdivinanza) {
 
         }
         textoPremio.textContent = "Máscara"
+        textoPremio.style.color = "black"
+        textoPremio.fontFamily = "'Nunito', sans-serif"
+        btnSiguiente.style.backgroundColor = "#AC3317"
 
         break;
 
     case 'armadillo':
+
+        derecha.src = "./../../data/img/iconoDerecho2.png"
+        izquierda.src = "./../../data/img/iconoIzquierdo2.png"
+        cuerpo.style.background = "#F3E3D1"
         if (randomizador == 0) {
             imagenDelPremio.src = "./../../data/img/dibujo1.jpg"
             localStorage.setItem('premioDibuji', '1')
@@ -77,6 +101,9 @@ switch (premioAdivinanza) {
 
         }
         textoPremio.textContent = "Dibujo"
+        textoPremio.style.color = "black"
+        textoPremio.fontFamily = "'Nunito', sans-serif"
+        btnSiguiente.style.backgroundColor = "#594D94"
 
         break;
 }

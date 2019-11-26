@@ -53,7 +53,7 @@ body {
 }
 
 .ImagenDelPremio {
-    width: 300px;
+    width: 260px;
 }
 
 .boton {
@@ -117,12 +117,6 @@ body {
     }
 }
 
-@media (max-width: 360px) {
-    .ImagenDelPremio{
-        width: 200px;
-    }
-}
-
 @media (max-width: 320px), (max-height: 568px) {
     .contenedorPremio {
         width: 100%;
@@ -131,7 +125,7 @@ body {
         font-size: 20px;
     }
     .ImagenDelPremio {
-        width: 180px;
+        width: 200px;
     }
     #botonCompletado {
         overflow: visible;
@@ -146,7 +140,7 @@ body {
         font-size: 24px;
     }
     .ImagenDelPremio {
-        width: 150px;
+        width: 190px;
     }
 }
 
@@ -161,10 +155,6 @@ body {
         font-size: 20px;
     }
 
-    .ImagenDelPremio{
-        width: 190px
-    };
-
     #derecha {
         position: fixed;
         right: 0;
@@ -172,7 +162,6 @@ body {
         width: 70px;
         height: 50px;
     }
-    
     #izquierda {
         position: fixed;
         left: 0;

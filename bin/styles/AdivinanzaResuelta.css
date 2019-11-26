@@ -74,8 +74,6 @@ body {
     }
 }
 
-
-
 @media (max-width: 320px), (max-height: 568px) {
     .ImagenAdivinanza{
         margin-top: 70px;

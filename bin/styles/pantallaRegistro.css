@@ -515,10 +515,11 @@ body {
    }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 640px) {
     .marca{
         overflow: visible;
         height: 60px;flex-direction: row;
+        margin-top: 20px;
     }
     #titulo{
         font-size: 20px;
