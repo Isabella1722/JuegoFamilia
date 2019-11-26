@@ -75,7 +75,7 @@ p {
 }
 
 #botonCompletado {
-    background: #F8C65F;
+    background: #594D94;
     border-style: none;
     color: white;
     border-radius: 25px;
@@ -98,9 +98,9 @@ p {
 }
 
 #botonCompletado:hover {
-    background: rgb(253, 220, 153);
+    background: rgb(134, 119, 211);
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0px 0px 0px 7px rgb(253, 220, 153);
+    box-shadow: 0px 0px 0px 7px rgb(134, 119, 211);
 }
 
 @media (max-width: 517px) {
