@@ -196,7 +196,7 @@ p {
     }
     .tituloA {
         font-family: 'Nunito', sans-serif;
-        color: white;
+        color: black;
         font-weight: bold;
         font-size: 24px;
         display: flex;
@@ -210,7 +210,7 @@ p {
     }
     p {
         font-family: 'Nunito', sans-serif;
-        color: white;
+        color: black;
         font-size: 17px;
         display: flex;
         align-items: center;
@@ -246,7 +246,7 @@ p {
     }
     .tituloA {
         font-family: 'Nunito', sans-serif;
-        color: white;
+        color: black;
         font-weight: bold;
         font-size: 20px;
         display: flex;
@@ -260,7 +260,7 @@ p {
     }
     p {
         font-family: 'Nunito', sans-serif;
-        color: white;
+        color: black;
         font-size: 17px;
         display: flex;
         align-items: center;
