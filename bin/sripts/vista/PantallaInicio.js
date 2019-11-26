@@ -24,17 +24,20 @@ let passInput = document.querySelector('#passwordLogin')
 let btnIngresar = document.querySelector("#botonIngresar");
 let ping
 let cont = 5;
+let sonidoF;
 
 
 
 
 
 function preload() {
-    ping = loadSound("./sounds/sonido.mp3")
+    ping = loadSound("./sounds/boton.mp3");
+    sonidoF = loadSound("./sounds/inicio.mp3");
 }
 
 function setup() {
-    /*ping.loop();*/
+    /*sonidoF.loop();*/
+    sonidoF.loop();
 }
 
 /*
