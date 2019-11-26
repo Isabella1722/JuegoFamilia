@@ -5,6 +5,22 @@ segundos -= 1;
 
 
 
+let sonidoF;
+
+
+function preload() {
+    sonidoF = loadSound("./../../sounds/Espera.mp3");
+}
+
+function setup() {
+  
+    sonidoF.loop();
+    /*sonidoF.loop();*/
+
+  
+}
+
+
 
 
 let hiloPorSegundo = setInterval(function () {
