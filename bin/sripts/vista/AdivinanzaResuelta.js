@@ -10,9 +10,26 @@ var adivinanza = localStorage.getItem('adivinanza')
 switch (adivinanza) {
 
     case 'aguila':
-
         imagen.src = "./../../data//img/aguila.png"
         titulo.textContent = "Águila"
+        cultura.textContent = "Alfiler de oro de la cultura Ilama que alude a un águila arpía (Hapia harpyja) con las plumas de la cabeza y el penacho desplegado. Se aferra a un mono acurrucado con rasgos de apariencia humana."
+        break;
+
+    case 'gueopardo':
+        imagen.src = "./../../data//img/jaguar.png"
+        titulo.textContent = "Guepardo"
+        cultura.textContent = "Alfiler de oro de la cultura Ilama que alude a un águila arpía (Hapia harpyja) con las plumas de la cabeza y el penacho desplegado. Se aferra a un mono acurrucado con rasgos de apariencia humana."
+        break;
+
+    case 'rana':
+        imagen.src = "./../../data//img/rana.png"
+        titulo.textContent = "Rana"
+        cultura.textContent = "Alfiler de oro de la cultura Ilama que alude a un águila arpía (Hapia harpyja) con las plumas de la cabeza y el penacho desplegado. Se aferra a un mono acurrucado con rasgos de apariencia humana."
+        break;
+
+    case 'armadillo':
+        imagen.src = "./../../data//img/armadillo.png"
+        titulo.textContent = "Armadillo"
         cultura.textContent = "Alfiler de oro de la cultura Ilama que alude a un águila arpía (Hapia harpyja) con las plumas de la cabeza y el penacho desplegado. Se aferra a un mono acurrucado con rasgos de apariencia humana."
         break;
 }

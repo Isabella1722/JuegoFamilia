@@ -17,26 +17,50 @@ let randomizador = parseInt(Math.random() * 2)
 
 //let retrasadorDos = setTimeout(function () {
 
-    contenedorPremio.style.display = "flex"
+contenedorPremio.style.display = "flex"
 
-    contenedorPremio.classList.add("zoomIn")
+contenedorPremio.classList.add("zoomIn")
 
 //}, 2500)
 
 switch (premioAdivinanza) {
     case 'aguila':
         //if (randomizador == 0) {
-            //imagenDelPremio.src = "./../../data/img/source.gif"
-           // localStorage.setItem('premioLibro', '1')
+        //imagenDelPremio.src = "./../../data/img/source.gif"
+        // localStorage.setItem('premioLibro', '1')
 
         //} else if (randomizador == 1) {
-            imagenDelPremio.src = "./../../data/img/source.gif"
-            //localStorage.setItem('premioLibro', '2')
+        imagenDelPremio.src = "./../../data/img/source.gif"
+        //localStorage.setItem('premioLibro', '2')
 
         //}
         textoPremio.textContent = "¡Ganaste un cuento!"
-
         break;
+
+    case 'gueopardo':
+        imagenDelPremio.src = "./../../data/img/rompe.gif"
+        //localStorage.setItem('premioLibro', '2')
+
+        //}
+        textoPremio.textContent = "¡Ganaste un rompecabezas!"
+        break;
+
+    case 'rana':
+        imagenDelPremio.src = "./../../data/img/mascara.jpg"
+        //localStorage.setItem('premioLibro', '2')
+
+        //}
+        textoPremio.textContent = "¡Ganaste una máscara!"
+        break;
+
+    case 'armadillo':
+        imagenDelPremio.src = "./../../data/img/gifP.gif"
+        //localStorage.setItem('premioLibro', '2')
+
+        //}
+        textoPremio.textContent = "¡Ganaste un dibujo!"
+        break;
+
 }
 
 btnVerPremio.addEventListener("click", function () {
