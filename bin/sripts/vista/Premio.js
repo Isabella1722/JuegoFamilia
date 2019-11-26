@@ -23,7 +23,7 @@ let retrasadorDos = setTimeout(function () {
 }, 2500)
 
 switch (premioAdivinanza) {
-    case 'guepardo':
+    case 'aguila':
         if (randomizador == 0) {
             imagenDelPremio.src = "./../../data/img/emojixd.jpg"
             localStorage.setItem('premioLibro', '1')

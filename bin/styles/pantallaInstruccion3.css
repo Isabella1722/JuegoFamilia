@@ -98,7 +98,12 @@ p {
     font-size: 20px;
 }
 
+#boton{
+    overflow: visible;
+}
+
 #botonVamos {
+    
     background: #594D94;
     border-style: none;
     color: white;

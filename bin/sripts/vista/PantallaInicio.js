@@ -32,7 +32,7 @@ let sonidoF;
 
 function preload() {
     ping = loadSound("./sounds/boton.mp3");
-    sonidoF = loadSound("./sounds/inicio.mp3");
+    sonidoF = loadSound("./sounds/inicioCorte.mp3");
 }
 
 function setup() {

@@ -11,18 +11,16 @@ html {
 body {
     background-image: url("./../../data/img/fondoadivinanza1.png");
     background-size: cover;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-
 }
 
-.contenedor{
-
+.contenedor {
     width: 100%;
     height: 100%;
     margin-top: 10%;
@@ -31,43 +29,42 @@ body {
     display: flex;
     flex-direction: column;
 }
-.titulo{
 
+.titulo {
     width: 50%;
     height: 30%;
-    
     align-items: center;
     align-content: center;
     display: flex;
     flex-direction: column;
-
+    margin-top: 10px;
 }
-.tituloA{
 
+.tituloA {
     font-family: 'Nunito', sans-serif;
-    color:white;
+    color: white;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 33px;
     display: flex;
     align-items: center;
     margin: 0 auto;
     margin-top: 2%;
     flex-direction: column;
 }
-.contenedorP{
 
-    width: 50%;
+.contenedorP {
+    margin-top: 80px;
+    width: 28%;
     height: 35%;
-  
     align-items: center;
     align-content: center;
     display: flex;
     flex-direction: column;
-
 }
-p{
+
+p {
     font-family: 'Nunito', sans-serif;
-    color:white;
+    color: white;
     font-size: 22px;
     display: flex;
     align-items: center;
@@ -75,29 +72,32 @@ p{
     margin-top: 0%;
     text-align: center;
     flex-direction: column;
-
 }
-#botonCompletado{
+
+#botonCompletado {
+  
     background: #F8C65F;
     border-style: none;
     color: white;
     border-radius: 25px;
     width: 200px;
     height: 50px;
-
     font-size: 20px;
     font-weight: 600;
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.boton{
-display: flex;
-flex-direction: column;
+
+.boton {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 60%;
-    margin-top: 5%;
+    margin-top: 13px;
     align-items: center;
     align-content: center;
 }
+
 #botonCompletado:hover {
     background: rgb(253, 220, 153);
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;

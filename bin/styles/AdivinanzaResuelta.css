@@ -22,19 +22,28 @@ body {
 }
 
 .ImagenAdivinanza {
-    margin-top: 100px;
-    width: 50%;
+    margin-top: 40px;
+    width: 300px;
 }
 
 .NombreFigura {
+    font-size: 25px;
     color: white;
 }
 
 .NombreCultura {
+    font-size: 19px;
     color: white;
+    font-weight: lighter;
+}
+
+.contenedor{
+    text-align: center;
+    width: 45%;
 }
 
 #botonContinuar {
+    margin-top: 20px;
     background: #F8C65F;
     border-style: none;
     color: white;

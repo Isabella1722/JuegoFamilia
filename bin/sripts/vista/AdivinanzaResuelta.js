@@ -9,11 +9,11 @@ var adivinanza = localStorage.getItem('adivinanza')
 
 switch (adivinanza) {
 
-    case 'guepardo':
+    case 'aguila':
 
-        imagen.src = "./../../data//img/jaguar.png"
-        titulo.textContent = "guepardo este guepatdo es muy bonto"
-        cultura.textContent = "Cuultura algo"
+        imagen.src = "./../../data//img/aguila.png"
+        titulo.textContent = "Águila"
+        cultura.textContent = "Alfiler de oro de la cultura Ilama que alude a un águila arpía (Hapia harpyja) con las plumas de la cabeza y el penacho desplegado. Se aferra a un mono acurrucado con rasgos de apariencia humana."
         break;
 }
 

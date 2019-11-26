@@ -8,8 +8,8 @@ let sonidoF;
 
 
 function preload() {
-    boton = loadSound("./sounds/boton.mp3");
-    sonidoF = loadSound("./sounds/inicio.mp3");
+    boton = loadSound("./../../sounds/boton.mp3");
+    sonidoF = loadSound("./../../sounds/inicioCorte.mp3");
 }
 
 function setup() {
@@ -24,25 +24,19 @@ function setup() {
 
 
 btnAtras.addEventListener("click", function () {
-  
+    boton.play();
     main.classList.remove("bounceInLeft")
     main.classList.add("bounceOutLeft");
    
     let retraso = setTimeout(function () {
+        
         
         document.location.href = "./../../../index.html";
         
 
     }, 1000)
     
-
-        boton.play(); 
-     
 })
-
-
-
-
 
 
 btnSiguiente.addEventListener("click", function () {
