@@ -5,6 +5,8 @@ body {
     display: flex;
     user-select: none;
     overflow: hidden;
+    background-color:#F8C65F ;
+    
 
 }
 
@@ -19,7 +21,7 @@ body {
     font-size: 350px;
     border-radius: 50%;
     font-family: 'Nunito', sans-serif;
-    background-color: rgb(202, 118, 103);
+    background-color: #BA563C;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out, line-height 0.5s ease-in-out;
 }
 
