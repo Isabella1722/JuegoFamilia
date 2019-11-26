@@ -1,8 +1,10 @@
 let btnCompletado = document.querySelector("#botonCompletado")
 let sonidoF;
+let boton;
 
 function preload() {
     sonidoF = loadSound("./../../sounds/Adivinanza.mp3");
+    boton = loadSound("./../../sounds/boton.mp3");
 }
 
 function setup() {
@@ -13,7 +15,7 @@ function setup() {
   
 }
 btnCompletado.addEventListener("click", function () {
-
+    boton.play();
     localStorage.setItem('adivinanza', 'aguila')
 
     let retraso = setTimeout(function () {
