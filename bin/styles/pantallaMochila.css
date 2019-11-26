@@ -1,12 +1,19 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0%;
+}
 html{
     width: 100%;
     height: 100%;
+
 }
 
 body{
     width: 100%;
     height: 100%;
-    background: rgb(0, 0, 59);
+    background: #a7cbcd;
     display: flex;
     flex-flow: row wrap;
     align-content: center;
@@ -17,4 +24,46 @@ body{
 .premio{
     width: 200px;
     margin: auto;
+}
+
+#derecha {
+    position: fixed;
+    right: 0;
+    top: 10px;
+    width: 300px;
+    height: 210px;
+}
+
+#izquierda {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 300px;
+    height: 210px;
+}
+p {
+    color: #2A2B3D;
+    font-size: 30px;
+    margin-top: 0%;
+    display: flex;
+   
+}
+
+@media (max-width: 603px), (max-height: 543px) {
+   
+    #derecha {
+        position: fixed;
+        right: 0;
+        top: 10px;
+        width: 160px;
+        height: 110px;
+    }
+    #izquierda {
+        position: fixed;
+        left: 0;
+        bottom: 10px;
+        width: 160px;
+        height: 100px;
+    }
+ 
 }
