@@ -362,6 +362,20 @@ body {
     }
 }
 
+@media (max-width: 490px) {
+    
+    .subcontenido{
+        width: 260px;
+        
+    }
+
+    .inputPw{
+        width: 240px;
+    }
+    
+       
+}
+
 @media (max-width: 375px) {
 
     .marca{
