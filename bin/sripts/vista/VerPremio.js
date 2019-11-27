@@ -11,6 +11,12 @@ let izquierda = document.querySelector("#izquierda")
 let premioAdivinanza = localStorage.getItem("premioAdivinanza")
 let randomizador = parseInt(Math.random() * 2)
 
+var logged = localStorage.getItem('logged')
+
+if(logged=='false'){
+    document.location.href = "./../../index.html"
+}
+
 //console.log(randomizador)
 
 /*let retrasador = setTimeout(function () {

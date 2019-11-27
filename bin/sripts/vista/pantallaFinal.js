@@ -1,6 +1,11 @@
 let btnSalir = document.querySelector(".salir")
 let sonidoF;
 let boton;
+var logged = localStorage.getItem('logged')
+
+if(logged=='false'){
+    document.location.href = "./../../index.html"
+}
 
 var logged = localStorage.getItem('logged')
 

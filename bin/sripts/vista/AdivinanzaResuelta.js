@@ -9,11 +9,17 @@ let descripcion = document.querySelector(".NombreCultura")
 var adivinanza = localStorage.getItem('adivinanza')
 
 
+var logged = localStorage.getItem('logged')
+
+if(logged=='false'){
+    document.location.href = "./../../index.html"
+}
+
 
 switch (adivinanza) {
 
     case 'aguila':
-        imagen.src = "./../../data//img/aguila.png"
+        imagen.src = "./../../data/img/aguila.png"
         titulo.textContent = "Águila"
         cultura.textContent = "Alfiler de oro de la cultura Ilama que alude a un águila arpía (Hapia harpyja) con las plumas de la cabeza y el penacho desplegado. Se aferra a un mono acurrucado con rasgos de apariencia humana."
         break;

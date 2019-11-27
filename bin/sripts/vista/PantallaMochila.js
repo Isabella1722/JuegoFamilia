@@ -15,6 +15,12 @@ let descargar4 = document.querySelector(".descargar4")
 
 let btnBotonContinuar = document.querySelector("#botonContinuar")
 
+var logged = localStorage.getItem('logged')
+
+if(logged=='false'){
+    document.location.href = "./../../index.html"
+}
+
 switch (premioAlmacenado1) {
     case '1':
         premio1.src = "./../../data/img/libro1.png"

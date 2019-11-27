@@ -5,6 +5,12 @@ let cont = 5;
 let boton;
 let sonidoF;
 
+var logged = localStorage.getItem('logged')
+
+if(logged=='false'){
+    document.location.href = "./../../index.html"
+}
+
 
 function preload() {
     boton = loadSound("./../../sounds/boton.mp3");

@@ -3,7 +3,11 @@ let segundos = 5;
 contador.textContent = segundos;
 segundos -= 1;
 
+var logged = localStorage.getItem('logged')
 
+if(logged=='false'){
+    document.location.href = "./../../index.html"
+}
 
 let sonidoF;
 
