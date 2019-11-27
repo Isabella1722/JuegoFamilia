@@ -13,6 +13,8 @@ let descargar2 = document.querySelector(".descargar2")
 let descargar3 = document.querySelector(".descargar3")
 let descargar4 = document.querySelector(".descargar4")
 
+let btnBotonContinuar = document.querySelector("#botonContinuar")
+
 switch (premioAlmacenado1) {
     case '1':
         premio1.src = "./../../data/img/libro1.png"
@@ -68,3 +70,10 @@ switch (premioAlmacenado4) {
         descargar4.download = "dibujo2.jpeg"
         break;
 }
+
+btnBotonContinuar.addEventListener("click", function () {
+
+    let retraso = setTimeout(function () {
+        document.location.href = "./../../bin/views/Final.html";
+    }, 500)
+})

@@ -1,8 +1,8 @@
 var logged = localStorage.getItem('logged')
 
-/*if(logged=='true'){
+if(logged=='true'){
     document.location.href = "./instruccion1.html"
-}*/
+}
 
 let btnRegistrar = document.querySelector("#botonRegistrar");
 let palabra = document.querySelector("#textoCheck")

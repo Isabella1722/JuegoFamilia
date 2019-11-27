@@ -2,9 +2,10 @@
 var logged = localStorage.getItem('logged')
 
 
-/*if(logged=='true'){
+if(logged=='true'){
     document.location.href = "./bin/views/instruccion1.html"
-}*/
+}
+
 var firebaseConfig = {
     apiKey: "AIzaSyBohk7vWZEwnYrclr8UdsfZPDwArRigMqo",
     authDomain: "familiapi.firebaseapp.com",
@@ -84,7 +85,7 @@ btnIngresar.addEventListener("click", function () {
                     }, 500)
 
                 } else {
-                    alert('Contrasena incorrecta')
+                    alert('Contrasña incorrecta')
 
                 }
 
