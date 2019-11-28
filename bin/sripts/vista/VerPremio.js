@@ -57,7 +57,7 @@ switch (premioAdivinanza) {
         cuerpo.style.background = "#F3E3D1"
         if (randomizador == 0) {
             imagenDelPremio.src = "./../../data/img/rompe1.png"
-            localStorage.setItem('premioRommpe', '1')
+            localStorage.setItem('premioRompe', '1')
 
         } else if (randomizador == 1) {
             imagenDelPremio.src = "./../../data/img/rompe2.png"

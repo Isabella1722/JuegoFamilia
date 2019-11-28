@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    font-family: 'Nunito', sans-serif;
     background-image: url("./../../data/img/fondoadivinanza1.png");
     background-size: cover;
     width: 100%;
@@ -27,11 +28,13 @@ body {
 }
 
 .NombreFigura {
+    font-family: 'Nunito', sans-serif;
     font-size: 25px;
     color: white;
 }
 
 .NombreCultura {
+    font-family: 'Nunito', sans-serif;
     font-size: 19px;
     color: white;
     font-weight: lighter;
@@ -43,6 +46,7 @@ body {
 }
 
 #botonContinuar {
+    font-family: 'Nunito', sans-serif;
     margin-top: 20px;
     background: #F8C65F;
     border-style: none;
@@ -56,6 +60,7 @@ body {
 }
 
 #botonContinuar:hover {
+    font-family: 'Nunito', sans-serif;
     background: rgb(255, 231, 184);
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0px 0px 0px 7px rgb(255, 231, 184);

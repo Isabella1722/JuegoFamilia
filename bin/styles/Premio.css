@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    font-family: 'Nunito', sans-serif;
     background: #545587;
     background-size: cover;
     width: 100%;
@@ -46,6 +47,7 @@ body {
 }
 
 .textoPremio {
+    font-family: 'Nunito', sans-serif;
     font-size: 60px;
     color: white;
     text-align: center;
@@ -57,6 +59,7 @@ body {
 }
 
 .boton {
+    font-family: 'Nunito', sans-serif;
     overflow: visible;
     display: flex;
     flex-direction: column;
