@@ -27,10 +27,6 @@ let ping
 let cont = 5;
 let sonidoF;
 
-
-
-
-
 function preload() {
     ping = loadSound("./sounds/boton.mp3");
     sonidoF = loadSound("./sounds/inicioCorte.mp3");
