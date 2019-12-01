@@ -2,7 +2,7 @@
 var logged = localStorage.getItem('logged')
 
 
-if(logged=='true'){
+if (logged == 'true') {
     document.location.href = "./bin/views/instruccion1.html"
 }
 
@@ -34,7 +34,7 @@ function preload() {
 
 function setup() {
     sonidoF.loop();
-  
+
 }
 
 /*
@@ -54,7 +54,13 @@ btnIngresar.addEventListener("click", function () {
     let correo = correoInput.value
     correo = correo.toLowerCase()
     let pass = passInput.value
+    if (correo == "") {
+        alert('Ingrese su correo registrado.')
+    }
 
+    if (pass == "") {
+        alert('Ingrese su contraseña.')
+    }
 
     let ref = firebase.database().ref("usuarios/");
     ref.on('value', function (snapshot) {
@@ -71,17 +77,16 @@ btnIngresar.addEventListener("click", function () {
             let correoDB = completeData[id].correo;
             let passDB = completeData[id].pass;
 
-
             if (correo == correoDB) {
                 if (pass == passDB) {
-                    ping.play();    
+                    ping.play();
                     localStorage.setItem('logged', 'true')
                     let retrasador = setTimeout(function () {
                         document.location.href = "./bin/views/instruccion1.html"
                     }, 500)
 
                 } else {
-                    alert('Contrasña incorrecta')
+                    alert('Usuario o contraseña incorrecta.')
 
                 }
 
