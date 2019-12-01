@@ -280,181 +280,14 @@ body {
     flex-direction: column;
 }
 
-@media (max-width: 1130px) {
-    .contrasenaVerificar {
-        display: flex;
-        flex-direction: column;
-        margin: 0 0;
-        text-align: left;
-    }
+@media (max-height: 320px) {}
 
-    .inputPw {
-        margin: 10px 0;
-    }
-}
+@media (max-width: 431px) {}
 
-@media (max-width: 952px) {
-    .subcontenido{
-        width: 400px;
-    }
-}
+@media (max-width: 515px) {}
 
-@media (max-height: 644px) {
-    .contenido{
-        margin-top: 5px;
-    }
-}
-
-@media (max-width: 568px) {
-    .contenido{
-        margin-top: 5px;
-    }
-
-    .contrasenaVerificar{
-        text-align: center;
-    }
-
-    .condiciones{
-        text-align: left;
-    }
-
-    .input{
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .inputPw{
-        height: 40px;
-        font-size: 14px;
-    }
-
-    #botonRegistrar{
-        width: 150px;
-        height: 40px;
-        font-size: 18px;
-    }
- 
-    .contenedorBtnRegistro{
-        text-align: center;
-    }
-}
-
-@media (max-width: 568px) {
-
-    .subcontenido{
-        width: 400px;
-    }
-
-    .contrasenaVerificar{
-        text-align: left;
-    }
-
-    .contrasenaInput{
-        text-align: left;
-        
-    }
-
-    .verificarInput{
-        text-align: left;
-    }
-    .inputPw{
-        width: 300px;
-    }
-}
-
-@media (max-width: 490px) {
-    
-    .subcontenido{
-        width: 260px;
-        
-    }
-
-    .inputPw{
-        width: 240px;
-    }
-    
-       
-}
-
-@media (max-width: 375px) {
-
-    .marca{
-        margin: 0;
-        flex-direction: column;
-        align-items: center;
-    }
-    .logo{
-        margin-top: 50px;
-        width: 80px;
-        height: 70px;
-    }
-
-    #titulo{
-        margin-top: 0;
-    }
-
-    .subcontenido{
-        text-align: center;
-        width: 260px;
-    }
-
-    .contrasenaVerificar{
-        text-align: left;
-    }
-
-    .contrasenaInput{
-        text-align: left;
-        
-    }
-
-    .verificarInput{
-        text-align: left;
-    }
-    .inputPw{
-        width: 240px;
-    }
-}
-
-@media (max-width: 362px) {
-    .marca{
-        overflow: visible;
-        flex-direction: column;
-        align-items: center;
-    }
-    .logo{
-        overflow: visible;
-        width: 90px;
-        height: 80px;
-    }
-
-    #titulo{
-        height: 20px;
-        margin-bottom: 55px;
-        overflow: visible;
-        margin-top: 0;
-    }
-
-    .subcontenido{
-        width: 200px;
-    }
-
-    .contrasenaVerificar{
-        text-align: left;
-    }
-}
-
-@media (max-width: 362px) {
-    #titulo{
-        margin-top: 30px;
-    }
-
-    .tituloRegistro{
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 320px), (max-height: 568) {
-    .marca{
+@media (max-width: 320px), (max-height: 568px) {
+    .marca {
         overflow: visible;
         display: flex;
         flex-direction: column;
@@ -464,159 +297,73 @@ body {
         margin-left: 0;
         margin-top: 40px;
     }
-
     .logo {
         width: 90px;
         height: 80px
     }
-    
     #titulo {
         overflow: visible;
         margin-bottom: 10px;
         font-size: 20px;
         height: 10px;
     }
-
-    .contenido{
+    .contenido {
         margin-top: 5px;
         margin-left: 0;
         margin-top: 0;
     }
-    .subcontenido{
+    .subcontenido {
         text-align: center;
         width: auto;
     }
-
-    .tituloRegistro{
+    .tituloRegistro {
         font-size: 23px;
     }
-
-    .input{
+    .input {
         height: 35px;
     }
-
     .inputPw {
         height: 35px;
         margin: 10px 0;
     }
-    
-   .condiciones{
-       font-size: 12px;
-   }
-
-   #botonRegistrar{
-       width: 150px;
-       height: 40px;
-       font-size: 18px;
-   }
-
-   .contenedorBtnRegistro{
-       text-align: center;
-   }
-}
-
-@media (max-height: 640px) {
-    .marca{
-        overflow: visible;
-        height: 60px;flex-direction: row;
-        margin-top: 20px;
+    .contrasenaVerificar {
+        display: flex;
+        flex-direction: column;
     }
-    #titulo{
-        font-size: 20px;
-        overflow: visible;
-        margin-top: 0;
+    .condiciones {
+        font-size: 12px;
     }
-    
-    .logo{
-        margin-top: 10px;
-        width: 70px;
-        height: 60px;
-    }
-}
-
-@media (max-height: 540px) {
-    .marca{
-        overflow: visible;
-        height: 60px;flex-direction: row;
-    }
-    #titulo{
-        font-size: 20px;
-        overflow: visible;
-        margin-top: 0;
-    }
-    
-    .logo{
-        margin-top: 10px;
-        width: 70px;
-        height: 60px;
-    }
-
-    .tituloRegistro{
-        font-size: 20px;
-    }
-
-    .input{
-        height: 30px;
-    }
-
-    .inputPw{
-        height: 30px;
-    }
-}
-
-@media (max-height: 455px) {
-    .marca{
-        margin-top: 5px;
-        overflow: visible;
-        height: 60px;flex-direction: row;
-    }
-    #titulo{
-        font-size: 20px;
-        overflow: visible;
-        margin-top: 0;
-    }
-    
-    .logo{
-        margin-top: 10px;
-        width: 70px;
-        height: 60px;
-    }
-
-    .tituloRegistro{
-        font-size: 20px;
-    }
-
-    .input{
-        height: 30px;
-    }
-
-    .inputPw{
-        height: 30px;
-    }
-}
-
-@media (max-height: 360px) {
-
-
-    .tituloRegistro{
-        font-size: 20px;
-    }
-
-    .input{
-        height: 30px;
-    }
-
-    .inputPw{
-        height: 30px;
-    }
-
-    .tituloRegistro{
-        margin-bottom: 0;
-    }
-
-    #botonRegistrar{
-        width: 130px;
+    #botonRegistrar {
+        width: 150px;
         height: 40px;
-        font-size: 15px;
+        font-size: 18px;
+    }
+    .contenedorBtnRegistro {
+        text-align: center;
     }
 }
+
+@media (max-width: 700px) {}
+
+@media (max-width: 1135px) {
+    .contrasenaVerificar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputPw{
+        width: 300px;
+    }
+}
+
+@media (max-height: 1000px) {}
+
+@media (max-height: 956px) {}
+
+@media (max-height: 815px) {}
+
+@media (max-height: 800px) {}
+
+@media (max-height: 455px) {}
+
+@media (max-height: 390px) {}
