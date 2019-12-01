@@ -13,10 +13,19 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    overflow-y: hidden;
+    margin: auto auto;
+   
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    overflow: visible;
 }
 
 .barra {
@@ -39,14 +48,6 @@ body {
 
 .barra h1 {
     margin-top: 15px;
-}
-
-.contenido {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .inicioDescripcion {
@@ -120,88 +121,80 @@ body {
 
 /*pantallla de celular*/
 
-@media (max-width: 603px), (max-height: 595px) {
-    .contenido {
-        margin-top: 12px;
-    }
+@media (max-width: 320px), (max-height: 568px) {
     .logo {
-        width: 125px;
+        width: 100px;
+        display: block;
+    }
+    .contenido {
+        margin-top: 12%;
     }
     .barra h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
     .inicioDescripcion {
-        width: 240px;
+        width: 80%;
         font-size: 12px;
     }
     #emailLogin {
-        width: 200px;
-        height: 35px;
+        width: 213px;
+        height: 36px;
     }
     #passwordLogin {
-        width: 200px;
-        height: 35px;
+        width: 213px;
+        height: 36px;
     }
     #botonIngresar {
-        width: 180px;
-        height: 50px;
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
     }
     #registrarBoton {
-        margin-top: 10px;
-        width: 180px;
-        height: 50px;
-        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
     }
 }
 
-@media (max-height: 799px) {
+@media (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
     .logo {
-        width: 150px;
+        width: 100px;
+        display: block;
     }
-    .barra h1 {
-        font-size: 25px;
-    }
-}
-
-@media (max-height: 548px) {
     .contenido {
-        margin-top: 50px;
-    }
-    .logo {
-        width: 50px;
+        margin-top:20vh;
     }
     .barra h1 {
-        margin-top: 0px;
-        font-size: 10px;
+        font-size: 22px;
     }
     .inicioDescripcion {
-        font-size: 8px;
+        width: 80%;
+        font-size: 12px;
     }
     #emailLogin {
-        width: 200px;
-        height: 20px;
+        width: 213px;
+        height: 36px;
     }
     #passwordLogin {
-        width: 200px;
-        height: 20px;
+        width: 213px;
+        height: 36px;
     }
     #botonIngresar {
-        width: 180px;
-        height: 35px;
-        font-size: 13px;
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
     }
     #registrarBoton {
-        margin-top: 10px;
-        width: 180px;
-        height: 35px;
-        font-size: 13px;
-        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
     }
-
-}
-
-@media (max-height: 345px) {
-    .contenido {
-        margin-top: 10px;
-    }
-}
+  }
