@@ -155,46 +155,12 @@ body {
     }
 }
 
-@media (orientation: landscape) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
+@media (max-height: 320px){
+    .contenido {
+        margin-top: 1%;
     }
 
-    .logo {
-        width: 100px;
-        display: block;
-    }
-    .contenido {
-        margin-top:20vh;
-    }
     .barra h1 {
-        font-size: 22px;
+        margin-top: 0;
     }
-    .inicioDescripcion {
-        width: 80%;
-        font-size: 12px;
-    }
-    #emailLogin {
-        width: 213px;
-        height: 36px;
-    }
-    #passwordLogin {
-        width: 213px;
-        height: 36px;
-    }
-    #botonIngresar {
-        width: 150px;
-        height: 40px;
-        font-size: 18px;
-    }
-    #registrarBoton {
-        margin-top: 20px;
-        font-size: 18px;
-    }
-  }
+}
