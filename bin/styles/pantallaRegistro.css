@@ -255,8 +255,8 @@ body {
     align-self: flex-end;
     margin-top: 2%;
     margin-right: 2%;
-    width: 42px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .modal h1 {
@@ -279,12 +279,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-@media (max-height: 320px) {}
-
-@media (max-width: 431px) {}
-
-@media (max-width: 515px) {}
 
 @media (max-width: 320px), (max-height: 568px) {
     .marca {
@@ -343,16 +337,100 @@ body {
     }
 }
 
-@media (max-width: 700px) {}
-
 @media (max-width: 1135px) {
     .contrasenaVerificar {
         display: flex;
         flex-direction: column;
+        width: auto;
+        margin: 0;
+    }
+    .contenido {
+        width: auto;
+    }
+    .subcontenido {
+        width: 400px;
+    }
+    .contrasenaVerificar {
+        width: auto;
+    }
+    .contrasenaInput {
+        width: auto;
+    }
+    .inputPw {
+        width: 80%;
+    }
+}
+
+@media (max-width: 914px) {
+    .subcontenido {
+        width: auto;
+    }
+    .inputPw {
+        width: 250px;
+    }
+}
+
+@media (max-width: 775px) {
+    .inputPw {
+        width: 200px;
+    }
+}
+
+@media (max-width: 700px) {}
+
+@media (max-width: 570px) {
+    .modal p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 515px) {}
+
+@media (max-width: 431px) {}
+
+@media (max-width: 413px) {
+    .marca {
+        margin-top: 10px;
+        margin-left: 0;
+        align-items: center;
+        flex-direction: column;
+        overflow: visible;
+        height: auto;
+    }
+    #titulo {
+        margin-top: 0;
+        font-size: 25px;
+        overflow: visible;
+        height: 70px;
+        line-height: 50px;
+        height: 50px;
+    }
+    .contenido {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 385px) {
+    .modal h1{
+        font-size: 15px;
     }
 
-    .inputPw{
-        width: 300px;
+    .modal p{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 320px) {
+    .marca {
+        margin-top: 50px;
+    }
+
+    .modal h1{
+        font-size: 15px;
+    }
+
+    .modal p{
+        font-size: 10px;
     }
 }
 
@@ -364,6 +442,50 @@ body {
 
 @media (max-height: 800px) {}
 
-@media (max-height: 455px) {}
+@media (max-height: 629px) {
+    .marca {
+        margin-top: 10px;
+    }
 
-@media (max-height: 390px) {}
+    .logo{
+        width: 100px;
+        height: 90px;
+    }
+    
+    .tituloRegistro{
+        margin-bottom: 0;
+    }
+
+    .contenido{
+        margin-top: 0;
+    }
+
+
+}
+
+@media (max-height: 527px) {
+    .logo {
+        width: 80px;
+        height: 70px;
+    }
+
+    #titulo{
+        font-size: 20px;
+        height: 30px;
+    }
+
+    .tituloRegistro{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-height: 480px) {
+    *{
+        overflow: scroll;
+    }
+}
+
+@media (max-height: 308px) {}
+
+@media (max-height: 320px) {}
