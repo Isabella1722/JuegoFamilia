@@ -19,6 +19,10 @@ body {
     flex-direction: column;
 }
 
+.p5Canvas{
+    display: none;
+}
+
 .marca {
     margin-top: 30px;
     display: flex;

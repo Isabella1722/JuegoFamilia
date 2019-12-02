@@ -14,17 +14,19 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto auto;
+    justify-content: center;
 }
 
 .contenido {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    margin-top: 200px;
+    /*margin-top: 200px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: visible;
+    justify-content: center;
 }
 
 .barra {
@@ -123,6 +125,11 @@ body {
     margin: 15px auto;
 }
 
+
+.p5Canvas{
+    display: none;
+}
+
 /*pantallla de celular*/
 
 @media (max-height: 320px) {
@@ -192,31 +199,31 @@ body {
 
 @media (max-width: 700px) {
     .contenido {
-        margin-top: 55px;
+        /*margin-top: 55px;*/
     }
 }
 
 @media (max-height: 1000px) {
     .contenido {
-        margin-top: 100px;
+        /*margin-top: 100px;*/
     }
 }
 
 @media (max-height: 956px) {
     .contenido {
-        margin-top: 40px;
+        /*margin-top: 40px;*/
     }
 }
 
 @media (max-height: 815px) {
     .contenido {
-        margin-top: 55px;
+        /*margin-top: 55px;*/
     }
 }
 
 @media (max-height: 800px) {
     .contenido{
-        margin-top: 60px;
+        /*margin-top: 60px;*/
     }
 
     .barra{
@@ -247,7 +254,7 @@ body {
 
 @media (max-height: 455px){
     .contenido{
-        margin-top: 30px;
+        /*margin-top: 30px;*/
     }
 }
 
