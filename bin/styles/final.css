@@ -1,6 +1,6 @@
 * {
     font-family: 'Nunito', sans-serif;
-     overflow: hidden;
+    overflow: hidden;
 }
 
 html {
@@ -14,12 +14,9 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    overflow-y: hidden;
+    margin: 0;
+    overflow: visible;
 }
-
 
 .barra {
     width: 100%;
@@ -30,26 +27,40 @@ body {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    margin-top: 100px;
     flex-direction: column;
+    overflow: visible;
 }
 
 .logo {
     width: 150px;
-    display: block;
+    overflow: visible;
 }
 
 .barra h1 {
     margin-top: 15px;
+    overflow: visible;
 }
 
 .contenido {
     width: 100%;
+    height: 100%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    overflow: visible;
+}
+
+.contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    overflow: visible;
 }
 
 .inicioDescripcion {
@@ -59,61 +70,80 @@ body {
     text-align: center;
     margin: 0;
 }
-.salirCon{
-    
-    margin: 5%;
 
+.despedida {
+    font-size: 25px;
+}
 
+.salirCon {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100px;
 }
 
 /*pantallla de celular*/
 
-@media (max-width: 603px), (max-height: 595px) {
-   
-    .contenido {
-        margin-top: 12px;
-    }
+@media (max-width: 500px) {
     .logo {
-        width: 125px;
+        width: 100px;
     }
     .barra h1 {
         font-size: 20px;
     }
     .inicioDescripcion {
-        width: 240px;
-        font-size: 12px;
+        width: 350px;
+        font-size: 15px;
     }
-    
+    .despedida {
+        font-size: 20px;
+    }
 }
 
-@media (max-height: 799px) {
+@media (max-width: 311px) {
     .logo {
-        width: 150px;
+        width: 100px;
+    }
+    .barra h1 {
+        font-size: 20px;
+    }
+    .inicioDescripcion {
+        width: 200px;
+        font-size: 15px;
+    }
+    .despedida {
+        font-size: 20px;
+    }
+}
+
+@media (max-height: 415x) {
+    .contenido {
+        margin-top: 30px;
+    }
+    .logo {
+        width: 60px;
+    }
+    .barra h1 {
+        font-size: 18px;
+    }
+    .inicioDescripcion {
+        font-size: 10px;
+    }
+}
+
+@media (max-height: 522px) {
+    .contenido {
+        margin-top: 40px;
+    }
+    .logo {
+        width: 100px;
     }
     .barra h1 {
         font-size: 25px;
     }
-}
-
-@media (max-height: 548px) {
-    .contenido {
-        margin-top: 50px;
-    }
-    .logo {
-        width: 50px;
-    }
-    .barra h1 {
-        margin-top: 0px;
-        font-size: 10px;
-    }
     .inicioDescripcion {
-        font-size: 8px;
-    }
-   
-    
-    @media (max-height: 345px) {
-        .contenido {
-            margin-top: 10px;
-        }
+        font-size: 15px;
     }
 }
