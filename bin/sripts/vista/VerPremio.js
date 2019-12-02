@@ -64,17 +64,19 @@ switch (premioAdivinanza) {
         break;
 
     case 'gueopardo':
-
+        
         derecha.src = "./../../data/img/iconoDerecho2.png"
         izquierda.src = "./../../data/img/iconoIzquierdo2.png"
         cuerpo.style.background = "#F3E3D1"
         if (randomizador == 0) {
             imagenDelPremio.src = "./../../data/img/rompe1.png"
             localStorage.setItem('premioRompe', '1')
+            imagenDelPremio.style.width = "300px"
 
         } else if (randomizador == 1) {
             imagenDelPremio.src = "./../../data/img/rompe2.png"
             localStorage.setItem('premioRompe', '2')
+            imagenDelPremio.style.width = "300px"
 
         }
         textoPremio.textContent = "Rompecabezas"
@@ -106,7 +108,7 @@ switch (premioAdivinanza) {
         break;
 
     case 'armadillo':
-
+        imagenDelPremio.style.width = "200px"
         derecha.src = "./../../data/img/iconoderechaMorado.png"
         izquierda.src = "./../../data/img/iconoizquierdaMorado.png"
         cuerpo.style.background = "#F3E3D1"
@@ -115,7 +117,7 @@ switch (premioAdivinanza) {
             localStorage.setItem('premioDibuji', '1')
 
         } else if (randomizador == 1) {
-            imagenDelPremio.src = "./../../data/img/dibujo2.jpeg"
+            imagenDelPremio.src = "./../../data/img/dibujo2.jpg"
             localStorage.setItem('premioDibuji', '2')
 
         }

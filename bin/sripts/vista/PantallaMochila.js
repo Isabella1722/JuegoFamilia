@@ -81,9 +81,9 @@ switch (premioAlmacenado4) {
         break;
 
     case '2':
-        premio4.src = "./../../data/img/dibujo2.jpeg"
-        descargar4.href = "./../../data/img/dibujo2.jpeg"
-        descargar4.download = "dibujo2.jpeg"
+        premio4.src = "./../../data/img/dibujo2.jpg"
+        descargar4.href = "./../../data/img/dibujo2.jpg"
+        descargar4.download = "dibujo2.jpg"
         break;
 }
 
