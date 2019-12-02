@@ -48,7 +48,7 @@ switch (premioAdivinanza) {
 
         //} else if (randomizador == 1) {
 
-        imagenDelPremio.src = "./../../data/img/source.gif"
+        imagenDelPremio.src = "./../../data/img/dsas.gif"
         //localStorage.setItem('premioLibro', '2')
 
         //}
@@ -58,7 +58,7 @@ switch (premioAdivinanza) {
 
     case 'gueopardo':
         cuerpo.style.background = "#F3E3D1"
-        imagenDelPremio.src = "./../../data/img/rompe.gif"
+        imagenDelPremio.src = "./../../data/img/GIF_2.gif"
         //localStorage.setItem('premioLibro', '2')
 
         //}
@@ -72,7 +72,7 @@ switch (premioAdivinanza) {
 
     case 'rana':
         cuerpo.style.background = "#F8C65F"
-        imagenDelPremio.src = "./../../data/img/mascara.jpg"
+        imagenDelPremio.src = "./../../data/img/gifmascara.gif"
         textoPremio.fontFamily = "'Nunito', sans-serif"
         //localStorage.setItem('premioLibro', '2')
 
@@ -86,7 +86,7 @@ switch (premioAdivinanza) {
 
     case 'armadillo':
         cuerpo.style.background = "#F3E3D1"
-        imagenDelPremio.src = "./../../data/img/gifP.gif"
+        imagenDelPremio.src = "./../../data/img/GIF_2.gif"
         //localStorage.setItem('premioLibro', '2')
 
         //}

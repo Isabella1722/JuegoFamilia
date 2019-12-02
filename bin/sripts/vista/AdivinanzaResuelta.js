@@ -40,7 +40,7 @@ switch (adivinanza) {
     case 'gueopardo':
         cuerpo.style.backgroundImage = "url(./../../data/img/fondoadivinanza2.png)"
         nombre.style.color = "#BA563C"
-        descripcion.style.color = "#BA563C"
+        descripcion.style.color = "black"
         imagen.src = "./../../data/img/jaguar.png"
         titulo.textContent = "Jaguar"
         btnContinuar.style.backgroundColor = "#BA563C"
@@ -51,7 +51,7 @@ switch (adivinanza) {
     case 'rana':
         cuerpo.style.backgroundImage = "url(./../../data/img/fondoadivinanza3.png)"
         nombre.style.color = "#AC3317"
-        descripcion.style.color = "#AC3317"
+        descripcion.style.color = "black"
         imagen.src = "./../../data/img/rana.png"
         titulo.textContent = "Rana"
         btnContinuar.style.backgroundColor = "#AC3317"
@@ -62,7 +62,7 @@ switch (adivinanza) {
     case 'armadillo':
         cuerpo.style.backgroundImage = "url(./../../data/img/fondoadivinanza4.png)"
         nombre.style.color = "#594D94"
-        descripcion.style.color = "#594D94"
+        descripcion.style.color = "black"
         imagen.src = "./../../data//img/armadillo.png"
         titulo.textContent = "Armadillo"
         btnContinuar.style.backgroundColor = "#594D94"

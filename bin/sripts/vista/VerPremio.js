@@ -56,11 +56,11 @@ switch (premioAdivinanza) {
         } else if (randomizador == 1) {
             imagenDelPremio.src = "./../../data/img/libro2.png"
             localStorage.setItem('premioLibro', '2')
-
         }
+
         textoPremio.textContent = "Cuento"
         textoPremio.fontFamily = "'Nunito', sans-serif"
-
+        
         break;
 
     case 'gueopardo':
