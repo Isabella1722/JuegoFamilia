@@ -23,14 +23,21 @@ body {
 main {
     width: 100%;
     height: 100%;
+    display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
     justify-items: center;
+    overflow: visible;
+}
+
+.contenerdor{
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
 }
 
 .descripcionMochila {
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -39,17 +46,16 @@ main {
 }
 
 .descripcionMochila p {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.descripcionMochila img {
+    width: 200px;
 }
 
 .contenidoMochila {
-    margin: 50px auto;
-    margin-top: 50px;
+    margin: 10px auto;
     width: 70%;
     display: flex;
     flex-flow: row wrap;
@@ -57,12 +63,14 @@ main {
     align-content: center;
     align-items: center;
     justify-items: center;
+    overflow: visible;
 }
 
 .premio {
-    width: 180px;
-    margin: auto;
+    width: 120px;
+    margin: 10px auto;
 }
+
 
 #derecha {
     position: fixed;
@@ -83,16 +91,17 @@ main {
 p {
     color: #2A2B3D;
     font-size: 30px;
-    margin-top: 0%;
     display: flex;
 }
 
 #boton {
-    overflow: visible;
+    height: 100px;
     text-align: center;
+    overflow: visible;
 }
 
 #botonContinuar {
+    height: auto;
     background: #594D94;
     border-style: none;
     color: white;
@@ -111,105 +120,132 @@ p {
     box-shadow: 0px 0px 0px 7px rgb(134, 119, 211);
 }
 
-@media (max-width: 1067px) {
+@media (max-width: 1085px) {
+    #derecha {
+        width: 250px;
+        height: 170px;
+    }
+    
+    #izquierda {
+        width: 250px;
+        height: 170px;
+    }
+
+}
+
+@media (max-width: 970px) {
+    #derecha {
+        width: 200px;
+        height: 130px;
+    }
+    
+    #izquierda {
+        width: 200px;
+        height: 130px;
+    }
+
+}
+
+@media (max-width: 855px) {
+    #derecha {
+        width: 200px;
+        height: 130px;
+    }
+    
+    #izquierda {
+        width: 200px;
+        height: 130px;
+    }
+
     .descripcionMochila p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    .descripcionMochila img {
+        width: 150px;
+    }
+
+    .premio{
+        width: 90px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    h1{
         font-size: 20px;
     }
-    .premio {
-        width: 100px;
+    .descripcionMochila p {
+        margin-top: 10px;
+        font-size: 14px;
     }
+    
+    .descripcionMochila img {
+        width: 120px;
+    }
+
+    .premio{
+        width: 90px;
+    }
+
+    #botonContinuar {
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
 }
 
 @media (max-width: 603px), (max-height: 543px) {
-    .descripcionMochila {
-        margin-top: 150px;
-    }
-    .descripcionMochila p {
-        font-size: 20px;
-    }
-    #derecha {
-        position: fixed;
-        right: 0;
-        top: 10px;
-        width: 160px;
-        height: 110px;
-    }
-    #izquierda {
-        position: fixed;
-        left: 0;
-        bottom: 10px;
-        width: 160px;
-        height: 100px;
-    }
-    .premio {
-        width: 65px;
-    }
+
 }
 
 @media (max-width: 465px) {
-    h1 {
-        font-size: 17px;
-    }
-    .descripcionMochila {
-        margin: 0 auto;
-        margin-top: 130px;
-        width: 60%;
-        text-align: center;
-    }
+   
 }
 
 @media (max-width: 371px) {
-    .contenidoMochila {
-        margin: 10px auto;
-    }
+
 }
 
-@media (max-width: 320px), (max-height: 568px) {
-    .descripcionMochila {
-        width: 70%;
+@media (max-height: 600px) {
+    #derecha {
+        width: 100px;
+        height: 80px;
+    }
+    
+    #izquierda {
+        width: 100px;
+        height: 80px;
+    }
+
+    .contenidoMochila{
         margin: 0 auto;
-        margin-top: 110px;
-        font-size: 12px;
     }
-    .descripcionMochila p {
-        margin-top: 8px;
-        font-size: 20px;
-        text-align: center;
+
+    .premio{
+        margin: 0 auto;
+        width: 100px;
     }
-    .contenidoMochila {
-        margin-top: 10px;
-        margin-bottom: 10px;
+
+    #botonContinuar {
+        width: 110px;
+        height: 35px;
+        font-size: 10px;
     }
-    .premio {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 80px;
-    }
+  
 }
 
-@media (max-height: 1130px) {
-    .descripcionMochila{
-        margin-top: 150px;
+@media (max-height: 472px) {
+    .premio{
+        width: 70px;
     }
-}
-
-@media (max-height: 527px) {
-    .premio {
-        width: 60px;
-    }
-    .contenidoMochila {
-        width: 65%;
-    }
-}
-
-@media (max-height: 382px) {
-    .descripcionMochila {
-        margin-top: 60px;
-    }
+  
 }
 
 @media (max-height: 325px) {
-    .descripcionMochila {
-        margin-top: 20px;
-    }
+    
+   
 }

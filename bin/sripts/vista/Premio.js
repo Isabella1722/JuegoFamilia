@@ -57,7 +57,7 @@ switch (premioAdivinanza) {
         //}
         textoPremio.textContent = "¡Ganaste un rompecabezas!"
         textoPremio.fontFamily = "'Nunito', sans-serif"
-        textoPremio.style.color = "black"
+        textoPremio.style.color = "#BA563C"
         derecha.src = "./../../data/img/iconoDerecho2.png"
         izquierda.src = "./../../data/img/iconoIzquierdo2.png"
         btnVerPremio.style.backgroundColor = "#BA563C"
@@ -71,7 +71,7 @@ switch (premioAdivinanza) {
 
         //}
         textoPremio.textContent = "¡Ganaste una máscara!"
-        textoPremio.style.color = "black"
+        textoPremio.style.color = "#AC3317"
         derecha.src = "./../../data/img/iconoDerecho2.png"
         izquierda.src = "./../../data/img/iconoIzquierdo2.png"
         btnVerPremio.style.backgroundColor = "#AC3317"
@@ -83,11 +83,12 @@ switch (premioAdivinanza) {
         //localStorage.setItem('premioLibro', '2')
 
         //}
+
         textoPremio.textContent = "¡Ganaste un dibujo!"
         textoPremio.fontFamily = "'Nunito', sans-serif"
-        textoPremio.style.color = "black"
-        derecha.src = "./../../data/img/iconoDerecho2.png"
-        izquierda.src = "./../../data/img/iconoIzquierdo2.png"
+        textoPremio.style.color = "#594D94"
+        derecha.src = "./../../data/img/iconoderechaMorado.png"
+        izquierda.src = "./../../data/img/iconoizquierdaMorado.png"
         btnVerPremio.style.backgroundColor = "#594D94"
         break;
 
@@ -103,3 +104,59 @@ btnVerPremio.addEventListener("click", function () {
     }, 500)
 })
 
+btnVerPremio.addEventListener("mouseover", function () {
+    switch (premioAdivinanza) {
+        case 'aguila':
+            btnVerPremio.style.backgroundColor = "rgb(255, 231, 184)"
+            btnVerPremio.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnVerPremio.style.boxShadow = "0px 0px 0px 7px rgb(255, 231, 184)"
+            break;
+
+        case 'gueopardo':
+            btnVerPremio.style.backgroundColor = "#E09D8B"
+            btnVerPremio.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnVerPremio.style.boxShadow = "0px 0px 0px 7px #E09D8B"
+            break;
+
+        case 'rana':
+            btnVerPremio.style.backgroundColor = "#DD907E"
+            btnVerPremio.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnVerPremio.style.boxShadow = "0px 0px 0px 7px #DD907E"
+            break;
+
+        case 'armadillo':
+            btnVerPremio.style.backgroundColor = "#A297D7"
+            btnVerPremio.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnVerPremio.style.boxShadow = "0px 0px 0px 7px #A297D7"
+            break;
+    }
+
+})
+
+btnVerPremio.addEventListener("mouseout", function () {
+    switch (premioAdivinanza) {
+        case 'aguila':
+            btnVerPremio.style.backgroundColor = "#F8C65F"
+            btnVerPremio.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnVerPremio.style.boxShadow = "none"
+            break;
+
+        case 'gueopardo':
+            btnVerPremio.style.backgroundColor = "#BA563C"
+            btnVerPremio.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnVerPremio.style.boxShadow = "none"
+            break;
+
+        case 'rana':
+            btnVerPremio.style.backgroundColor = "#AC3317"
+            btnVerPremio.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnVerPremio.style.boxShadow = "none"
+            break;
+
+        case 'armadillo':
+            btnVerPremio.style.backgroundColor = "#594D94"
+            btnVerPremio.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnVerPremio.style.boxShadow = "none"
+            break;
+    }
+})

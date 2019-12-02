@@ -22,7 +22,7 @@ switch (adivinanza) {
     case 'aguila':
         imagen.src = "./../../data/img/aguila.png"
         titulo.textContent = "Águila"
-        cultura.textContent = "Alfiler de oro de la cultura Ilama que alude a un águila arpía (Hapia harpyja) con las plumas de la cabeza y el penacho desplegado. Se aferra a un mono acurrucado con rasgos de apariencia humana."
+        cultura.textContent = "Alfiler de oro de la cultura Ilama que alude a un águila arpía (Hapia harpyja) con las plumas de la cabeza y el penacho desplegado. Se aferra a un mono acurrucado con rasgos de apariencia humana. Se usaba para revolver y extraer ingredientes dentro de recipientes de oro en rituales funerarios."
         break;
 
     case 'gueopardo':
@@ -32,7 +32,7 @@ switch (adivinanza) {
         imagen.src = "./../../data/img/jaguar.png"
         titulo.textContent = "Jaguar"
         btnContinuar.style.backgroundColor = "#BA563C"
-        cultura.textContent = "Chapa de oro martillada en un molde, en relieve y ensamblada con clavos."
+        cultura.textContent = "Chapa de oro martillada en un molde, en relieve y ensamblada con clavos, perteneció al periodo Yotoco en el año 200 a.C. Era utilizado para guardar dentro de él polvo de cal para rituales."
         //btnContinuar.classList.mouseOver.style.background = "#E09D8B"
         break;
 
@@ -44,7 +44,7 @@ switch (adivinanza) {
         titulo.textContent = "Rana"
         btnContinuar.style.backgroundColor = "#AC3317"
         //mouseOver.style.background = "#DD907E"
-        cultura.textContent = "Esta es una alcarraza en forma de anfibio de la región Calima perteneciente al período de Yotoco entre los años 200 a. C. y 1300 d. C."
+        cultura.textContent = "Alcarraza en forma de anfibio de la región Calima perteneciente al período de Yotoco entre los años 200 a. C. y 1300 d. C. Se usaba para almacenar agua."
         break;
 
     case 'armadillo':
@@ -55,7 +55,7 @@ switch (adivinanza) {
         titulo.textContent = "Armadillo"
         btnContinuar.style.backgroundColor = "#594D94"
         //mouseOver.style.background = "#A297D7"
-        cultura.textContent = "Figura zoomorfa en alcarraza. Cultura Yotoco."
+        cultura.textContent = "Alcarraza en forma de armadillo de la región Calima, pertenece al periodo ilama y tiene grabado en su exterior símbolos característicos de la cultura."
         break;
 }
 

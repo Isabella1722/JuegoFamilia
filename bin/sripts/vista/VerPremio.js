@@ -65,7 +65,7 @@ switch (premioAdivinanza) {
 
         }
         textoPremio.textContent = "Rompecabezas"
-        textoPremio.style.color = "black"
+        textoPremio.style.color = "#BA563C"
         textoPremio.fontFamily = "'Nunito', sans-serif"
         btnSiguiente.style.background = "#BA563C"
 
@@ -86,7 +86,7 @@ switch (premioAdivinanza) {
 
         }
         textoPremio.textContent = "Máscara"
-        textoPremio.style.color = "black"
+        textoPremio.style.color = "#AC3317"
         textoPremio.fontFamily = "'Nunito', sans-serif"
         btnSiguiente.style.backgroundColor = "#AC3317"
 
@@ -94,8 +94,8 @@ switch (premioAdivinanza) {
 
     case 'armadillo':
 
-        derecha.src = "./../../data/img/iconoDerecho2.png"
-        izquierda.src = "./../../data/img/iconoIzquierdo2.png"
+        derecha.src = "./../../data/img/iconoderechaMorado.png"
+        izquierda.src = "./../../data/img/iconoizquierdaMorado.png"
         cuerpo.style.background = "#F3E3D1"
         if (randomizador == 0) {
             imagenDelPremio.src = "./../../data/img/dibujo1.jpg"
@@ -107,7 +107,7 @@ switch (premioAdivinanza) {
 
         }
         textoPremio.textContent = "Dibujo"
-        textoPremio.style.color = "black"
+        textoPremio.style.color = "#594D94"
         textoPremio.fontFamily = "'Nunito', sans-serif"
         btnSiguiente.style.backgroundColor = "#594D94"
 
@@ -142,4 +142,61 @@ btnSiguiente.addEventListener("click", function () {
         }
 
     }, 500)
+})
+
+btnSiguiente.addEventListener("mouseover", function () {
+    switch (premioAdivinanza) {
+        case 'aguila':
+            btnSiguiente.style.backgroundColor = "rgb(255, 231, 184)"
+            btnSiguiente.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnSiguiente.style.boxShadow = "0px 0px 0px 7px rgb(255, 231, 184)"
+            break;
+
+        case 'gueopardo':
+            btnSiguiente.style.backgroundColor = "#E09D8B"
+            btnSiguiente.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnSiguiente.style.boxShadow = "0px 0px 0px 7px #E09D8B"
+            break;
+
+        case 'rana':
+            btnSiguiente.style.backgroundColor = "#DD907E"
+            btnSiguiente.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnSiguiente.style.boxShadow = "0px 0px 0px 7px #DD907E"
+            break;
+
+        case 'armadillo':
+            btnSiguiente.style.backgroundColor = "#A297D7"
+            btnSiguiente.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnSiguiente.style.boxShadow = "0px 0px 0px 7px #A297D7"
+            break;
+    }
+
+})
+
+btnSiguiente.addEventListener("mouseout", function () {
+    switch (premioAdivinanza) {
+        case 'aguila':
+            btnSiguiente.style.backgroundColor = "#F8C65F"
+            btnSiguiente.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnSiguiente.style.boxShadow = "none"
+            break;
+
+        case 'gueopardo':
+            btnSiguiente.style.backgroundColor = "#BA563C"
+            btnSiguiente.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnSiguiente.style.boxShadow = "none"
+            break;
+
+        case 'rana':
+            btnSiguiente.style.backgroundColor = "#AC3317"
+            btnSiguiente.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnSiguiente.style.boxShadow = "none"
+            break;
+
+        case 'armadillo':
+            btnSiguiente.style.backgroundColor = "#594D94"
+            btnSiguiente.style.transition = "background 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+            btnSiguiente.style.boxShadow = "none"
+            break;
+    }
 })

@@ -12,19 +12,19 @@ body {
     font-family: 'Nunito', sans-serif;
     background-image: url("./../../data/img/fondoadivinanza1.png");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* center flex items horizontally, in this case */
+    align-items: center;
+    /* center flex items vertically, in this case */
+    flex-direction: column;
+    margin: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    align-items: center;
 }
 
 .ImagenAdivinanza {
-    margin-top: 40px;
-    width: 300px;
+    width: 200px;
 }
 
 .NombreFigura {
@@ -35,9 +35,9 @@ body {
 
 .NombreCultura {
     font-family: 'Nunito', sans-serif;
-    font-size: 19px;
+    font-size: 16px;
     color: white;
-    font-weight: lighter;
+    font-weight: 300;
 }
 
 .contenedor{
@@ -47,7 +47,7 @@ body {
 
 #botonContinuar {
     font-family: 'Nunito', sans-serif;
-    margin-top: 20px;
+    margin-top: 10px;
     background: #F8C65F;
     border-style: none;
     color: white;
@@ -69,20 +69,22 @@ body {
 
 @media (max-width: 1084px){
     .ImagenAdivinanza{
-        margin-top: 25px;
-        width: 220px;
+        width: 200px;
     }
     .contenedor{
         width: 50%;
     }
     .NombreCultura{
-        font-size: 15px;
+        font-size: 13px;
     }
+}
+
+@media (max-width: 560px){
+
 }
 
 @media (max-width: 320px), (max-height: 568px) {
     .ImagenAdivinanza{
-        margin-top: 70px;
         width: 150px;
     }
     .contenedor{

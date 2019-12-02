@@ -84,11 +84,11 @@ body {
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-#botonCompletado:hover {
+/*#botonCompletado:hover {
     background: rgb(253, 220, 153);
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0px 0px 0px 7px rgb(253, 220, 153);
-}
+}*/
 
 @media (max-width: 1176px) {
     .textoPremio {
