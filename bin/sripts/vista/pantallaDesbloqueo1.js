@@ -5,7 +5,7 @@ segundos -= 1;
 
 var logged = localStorage.getItem('logged')
 
-if(logged=='false'){
+if (logged == 'false') {
     document.location.href = "./../../index.html"
 }
 
@@ -17,11 +17,11 @@ function preload() {
 }
 
 function setup() {
-  
+
     sonidoF.loop();
     /*sonidoF.loop();*/
 
-  
+
 }
 
 
@@ -42,6 +42,7 @@ let hiloPorSegundo = setInterval(function () {
         contador.style.color = "rgb(202, 118, 103)"
 
         contador.textContent = "¡Vamos!"
+
         let timeout = setTimeout(function () {
             document.location.href = "./Adivinanza1.html"
         }, 2000)

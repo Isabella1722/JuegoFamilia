@@ -9,57 +9,77 @@ html {
 }
 
 body {
-    background-image: url("./../../data/img/fondoadivinanza4.png");
+    background-image: url("./../../data/img/fondoadivinanza3.png");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* center flex items horizontally, in this case */
+    align-items: center;
+    /* center flex items vertically, in this case */
+    flex-direction: column;
+    margin: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .contenedor {
     width: 100%;
     height: 100%;
-    margin-top: 10%;
-    align-items: center;
-    align-content: center;
     display: flex;
+    justify-content: center;
+    /* center flex items horizontally, in this case */
+    align-items: center;
+    /* center flex items vertically, in this case */
     flex-direction: column;
+    position: absolute;
+    left: 50%;
+    /* relative to nearest positioned ancestor or body element */
+    top: 50%;
+    /*  relative to nearest positioned ancestor or body element */
+    transform: translate(-50%, -50%);
+    /* relative to element's height & width */
+}
+
+#garabato {
+    height: auto;
+    width: auto;
+    overflow: visible;
 }
 
 .titulo {
     width: 50%;
-    height: 30%;
+    height: auto;
+    text-align: center;
     align-items: center;
     align-content: center;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    overflow: visible;
 }
 
 .tituloA {
+    height: auto;
     font-family: 'Nunito', sans-serif;
-    color:black;
+    color: black;
     font-weight: bold;
     font-size: 33px;
     display: flex;
     align-items: center;
     margin: 0 auto;
-    margin-top: 2%;
     flex-direction: column;
+    overflow: visible;
 }
 
 .contenedorP {
-    margin-top: 80px;
-    width: 28%;
-    height: 30%;
+    width: 30%;
+    height: auto;
     align-items: center;
     align-content: center;
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    overflow: visible;
 }
 
 p {
@@ -72,6 +92,7 @@ p {
     margin-top: 0%;
     text-align: center;
     flex-direction: column;
+    overflow: visible;
 }
 
 #botonCompletado {
@@ -91,7 +112,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 60%;
+    height: auto;
     margin-top: 25px;
     align-items: center;
     align-content: center;
@@ -104,36 +125,18 @@ p {
 }
 
 @media (max-width: 517px) {
-    .titulo {
-        margin-top: 60px;
-    }
-    #garabato {
-        width: 150px;
-    }
     .tituloA {
         font-family: 'Nunito', sans-serif;
-        color: black;
         font-weight: bold;
         font-size: 24px;
         display: flex;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 2%;
-        flex-direction: column;
     }
     .contenedorP {
-        width: 70%;
+        width: 300px;
     }
     p {
         font-family: 'Nunito', sans-serif;
-        color: black;
         font-size: 17px;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 0%;
-        text-align: center;
-        flex-direction: column;
     }
     #botonCompletado {
         width: 160px;
@@ -145,9 +148,6 @@ p {
         overflow: visible;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 60%;
-        margin-top: 25px;
         align-items: center;
         align-content: center;
     }
@@ -155,69 +155,26 @@ p {
 
 @media (max-width: 751px) {
     .contenedorP {
-        overflow: visible;
-        margin-top: 20px;
-        width: 70%;
-        align-items: center;
-        align-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .boton {
-        overflow: visible;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 60%;
-        margin-top: 25px;
-        align-items: center;
-        align-content: center;
+        width: 300px;
     }
 }
 
-@media (max-height: 411px) {
-    .titulo{
-        overflow: visible;
-    }
-    .boton {
-        margin-top: 10px;
-    }
-    .contenedor{
-        margin-top: 5px;
-    }
-}
+@media (max-height: 411px) {}
 
 @media (max-width: 320px), (max-height: 568px) {
-    .titulo {
-        margin-top: 60px;
-    }
-    #garabato {
-        width: 150px;
-    }
     .tituloA {
         font-family: 'Nunito', sans-serif;
-        color: black;
         font-weight: bold;
         font-size: 24px;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 2%;
-        flex-direction: column;
     }
     .contenedorP {
         width: 70%;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     p {
         font-family: 'Nunito', sans-serif;
-        color: black;
         font-size: 17px;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 0%;
-        text-align: center;
-        flex-direction: column;
     }
     #botonCompletado {
         width: 160px;
@@ -229,44 +186,27 @@ p {
         overflow: visible;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 60%;
-        margin-top: 25px;
-        align-items: center;
-        align-content: center;
     }
 }
 
 @media (max-width: 292px) {
-    .titulo {
-        margin-top: 60px;
-    }
-    #garabato {
-        width: 130px;
-    }
     .tituloA {
         font-family: 'Nunito', sans-serif;
-        color: black;
         font-weight: bold;
         font-size: 20px;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 2%;
-        flex-direction: column;
     }
     .contenedorP {
         width: 72%;
     }
     p {
         font-family: 'Nunito', sans-serif;
-        color: black;
         font-size: 17px;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 0%;
-        text-align: center;
-        flex-direction: column;
+    }
+}
+
+@media (max-height: 330px) {
+    .contenedorP {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
