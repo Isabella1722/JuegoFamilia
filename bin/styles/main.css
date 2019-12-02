@@ -118,6 +118,11 @@ body {
     font-size: 20px;
 }
 
+.botonHome{
+    width: 30px;
+    margin: 15px auto;
+}
+
 /*pantallla de celular*/
 
 @media (max-height: 320px) {
@@ -128,8 +133,6 @@ body {
         margin-top: 0;
     }
 }
-
-
 
 @media (max-width: 431px) {
     .logo{

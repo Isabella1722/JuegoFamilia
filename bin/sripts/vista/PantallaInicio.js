@@ -22,7 +22,9 @@ firebase.initializeApp(firebaseConfig);
 
 let correoInput = document.querySelector('#emailLogin')
 let passInput = document.querySelector('#passwordLogin')
-let btnIngresar = document.querySelector("#botonIngresar");
+let btnIngresar = document.querySelector("#botonIngresar")
+let home = document.querySelector(".botonHome")
+let cuerpo = document.querySelector(".contenido")
 let ping
 let cont = 5;
 let sonidoF;
@@ -100,3 +102,16 @@ btnIngresar.addEventListener("click", function () {
 
 })
 
+home.addEventListener("click", function () {
+    cuerpo.classList.remove("bounceInDown")
+    cuerpo.classList.add("bounceOutUp");
+   
+    let retraso = setTimeout(function () {
+        
+        
+        document.location.href = "https://juandavidpf.github.io/Museo-Del-Oro/"
+        
+
+    }, 500)
+    
+})
