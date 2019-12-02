@@ -18,6 +18,8 @@ let aceptoTerminos = false
 
 let cont = 5;
 
+let boton
+
 var firebaseConfig = {
     apiKey: "AIzaSyBohk7vWZEwnYrclr8UdsfZPDwArRigMqo",
     authDomain: "familiapi.firebaseapp.com",
@@ -27,6 +29,15 @@ var firebaseConfig = {
     messagingSenderId: "943521700619",
     appId: "1:943521700619:web:a117acd032fe01862de00e"
 };
+
+function preload() {
+    inicio = loadSound("./../../sounds/inicioCorte.mp3");
+    boton = loadSound("./../../sounds/boton.mp3");
+}
+
+function setup() {
+    inicio.loop();
+}
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -73,7 +84,7 @@ btnRegistrar.addEventListener("click", function () {
     correo = correo.toLowerCase()
     let verificar = inputVerificar.value
     let existente = false
-
+    boton.play();
 
     //lee el firebase
     let ref = firebase.database().ref("usuarios/");
