@@ -15,11 +15,21 @@ let descargar4 = document.querySelector(".descargar4")
 
 let btnBotonContinuar = document.querySelector("#botonContinuar")
 
+let mochila
+
 var logged = localStorage.getItem('logged')
 
-if(logged=='false'){
+
+
+if (logged == 'false') {
     document.location.href = "./../../index.html"
 }
+/*function preload() {
+    mochila = loadSound("./../../sounds/mochila.mp3")
+}
+function setup() {
+    mochila.play()
+}*/
 
 switch (premioAlmacenado1) {
     case '1':
