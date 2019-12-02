@@ -11,10 +11,23 @@ let izquierda = document.querySelector("#izquierda")
 let premioAdivinanza = localStorage.getItem("premioAdivinanza")
 let randomizador = parseInt(Math.random() * 2)
 
+let boton;
+
+let premiosound;
+
 var logged = localStorage.getItem('logged')
 
-if(logged=='false'){
+if (logged == 'false') {
     document.location.href = "./../../index.html"
+}
+
+function preload() {
+    premiosound = loadSound("./../../sounds/premio00.mp3");
+    boton = loadSound("./../../sounds/boton.mp3");
+}
+
+function setup() {
+    premiosound.play();
 }
 
 //console.log(randomizador)
@@ -117,7 +130,7 @@ switch (premioAdivinanza) {
 btnSiguiente.addEventListener("click", function () {
 
     //localStorage.setItem('adivinanza', 'aguila')
-
+    boton.play()
     let retraso = setTimeout(function () {
         switch (premioAdivinanza) {
             case 'aguila':

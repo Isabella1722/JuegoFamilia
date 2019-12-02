@@ -6,6 +6,8 @@ let cuerpo = document.querySelector(".Cuerpo")
 let nombre = document.querySelector(".NombreFigura")
 let descripcion = document.querySelector(".NombreCultura")
 let mouseOver = document.querySelector(":hover")
+let acertar;
+let boton;
 
 var adivinanza = localStorage.getItem('adivinanza')
 
@@ -14,6 +16,16 @@ var logged = localStorage.getItem('logged')
 
 if (logged == 'false') {
     document.location.href = "./../../index.html"
+}
+
+function preload() {
+    boton = loadSound("./../../sounds/boton.mp3");
+    acertar = loadSound("./../../sounds/Acertaradivinanza.mp3");
+    
+}
+function setup() {
+    acertar.play();
+    /*sonidoF.loop();*/
 }
 
 
@@ -119,6 +131,7 @@ btnContinuar.addEventListener("mouseout", function () {
 btnContinuar.addEventListener("click", function () {
 
     localStorage.setItem('premioAdivinanza', adivinanza + "")
+    boton.play();
 
     let retraso = setTimeout(function () {
         document.location.href = "./../../bin/views/Premio.html";

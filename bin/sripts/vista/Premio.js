@@ -11,9 +11,11 @@ let izquierda = document.querySelector("#izquierda")
 let premioAdivinanza = localStorage.getItem("premioAdivinanza")
 let randomizador = parseInt(Math.random() * 2)
 
+let boton;
+
 var logged = localStorage.getItem('logged')
 
-if(logged=='false'){
+if (logged == 'false') {
     document.location.href = "./../../index.html"
 }
 
@@ -30,6 +32,11 @@ if(logged=='false'){
 contenedorPremio.style.display = "flex"
 
 contenedorPremio.classList.add("zoomIn")
+
+function preload() {
+    boton = loadSound("./../../sounds/boton.mp3")
+}
+
 
 //}, 2500)
 
@@ -95,7 +102,6 @@ switch (premioAdivinanza) {
 }
 
 btnVerPremio.addEventListener("click", function () {
-
     //localStorage.setItem('adivinanza', 'aguila')
 
     let retraso = setTimeout(function () {
