@@ -58,7 +58,7 @@ switch (premioAdivinanza) {
 
     case 'gueopardo':
         cuerpo.style.background = "#F3E3D1"
-        imagenDelPremio.src = "./../../data/img/GIF_2.gif"
+        imagenDelPremio.src = "./../../data/img/gifrompe.gif"
         //localStorage.setItem('premioLibro', '2')
 
         //}

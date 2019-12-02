@@ -99,7 +99,7 @@ p {
     font-size: 20px;
 }
 
-#boton{
+#boton {
     overflow: visible;
 }
 
@@ -123,7 +123,7 @@ p {
 
 @media (max-width: 603px), (max-height: 543px) {
     #tituloInstru {
-        margin-top: 50px;
+        margin-top: 100px;
         width: 40%;
         height: auto;
         display: flex;
@@ -191,5 +191,24 @@ p {
     #botonVamos {
         width: 150px;
         height: auto;
+    }
+}
+
+@media (max-height: 415px) {
+    main {
+        overflow: visible;
+    }
+    #tituloInstru {
+        overflow: visible;
+        margin-top: 30px;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    .texto-botones {
+        overflow: visible;
+    }
+    p {
+        font-size: 10px;
     }
 }
